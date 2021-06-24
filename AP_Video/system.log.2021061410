@@ -1,0 +1,24 @@
+2021/06/14 10:04:19	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'4411','363-050404','DDecoder','363-050650','UIP_NULL','有明テニスの森','363-050404',to_date('2021/06/14 10:04:19','yyyy/MM/dd HH24:MI:SS')
+2021/06/14 10:04:21	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	4411	Program	Program	映像配信を行いました。
+2021/06/14 10:08:09	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'2957','363-050404','DDecoder','363-050388','UIP_NULL','国際展示場前','363-050404',to_date('2021/06/14 10:08:09','yyyy/MM/dd HH24:MI:SS')
+2021/06/14 10:08:11	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	2957	Program	Program	映像配信を行いました。
+2021/06/14 10:11:43	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'2956','363-050404','DDecoder','363-050387','UIP_NULL','有明二丁目','363-050404',to_date('2021/06/14 10:11:43','yyyy/MM/dd HH24:MI:SS')
+2021/06/14 10:11:45	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	2956	Program	Program	映像配信を行いました。
+2021/06/14 10:12:56	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3344','363-050552','DDecoder','363-050532','UIP_NULL','東小松川交差点','363-050552',to_date('2021/06/14 10:12:56','yyyy/MM/dd HH24:MI:SS')
+2021/06/14 10:12:58	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3344	Program	Program	映像配信を行いました。
+2021/06/14 10:19:02	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'2856','363-050329','DDecoder','363-050326','UIP_NULL','雪谷大塚交差点','363-050329',to_date('2021/06/14 10:19:02','yyyy/MM/dd HH24:MI:SS')
+2021/06/14 10:19:04	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	2856	Program	Program	映像配信を行いました。
+2021/06/14 10:27:52	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3104','666-111111','DDecoder','363-050448','UIP_NULL','中野区防災カメラ１号機','666-111111',to_date('2021/06/14 10:27:52','yyyy/MM/dd HH24:MI:SS')
+2021/06/14 10:27:54	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3104	Program	Program	映像配信を行いました。
+2021/06/14 10:31:26	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3105','666-111111','DDecoder','363-050449','UIP_NULL','中野区防災カメラ２号機','666-111111',to_date('2021/06/14 10:31:26','yyyy/MM/dd HH24:MI:SS')
+2021/06/14 10:31:27	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3105	Program	Program	映像配信を行いました。
+2021/06/14 10:34:47	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3105','666-111111','DDecoder','363-050449','UIP_NULL','中野区防災カメラ２号機','666-111111',to_date('2021/06/14 10:34:47','yyyy/MM/dd HH24:MI:SS')
+2021/06/14 10:34:49	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3105	Program	Program	映像配信を行いました。
+2021/06/14 10:35:20	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3105','666-111111','DDecoder','363-050449','UIP_NULL','中野区防災カメラ２号機','666-111111',to_date('2021/06/14 10:35:20','yyyy/MM/dd HH24:MI:SS')
+2021/06/14 10:35:22	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3105	Program	Program	映像配信を行いました。
+2021/06/14 10:36:00	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3105','666-111111','DDecoder','363-050449','UIP_NULL','中野区防災カメラ２号機','666-111111',to_date('2021/06/14 10:36:00','yyyy/MM/dd HH24:MI:SS')
+2021/06/14 10:36:02	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3105	Program	Program	映像配信を行いました。
+2021/06/14 10:36:59	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'1','666-111111','DDecoder','ENCODER','UIP_NULL','基準放送','666-111111',to_date('2021/06/14 10:36:59','yyyy/MM/dd HH24:MI:SS')
+2021/06/14 10:37:01	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	1	Program	Program	映像配信を行いました。
+2021/06/14 10:37:14	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3105','666-111111','DDecoder','363-050449','UIP_NULL','中野区防災カメラ２号機','666-111111',to_date('2021/06/14 10:37:14','yyyy/MM/dd HH24:MI:SS')
+2021/06/14 10:37:16	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3105	Program	Program	映像配信を行いました。

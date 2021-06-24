@@ -1,0 +1,12 @@
+2021/04/23 03:04:27	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'2936','363-050363','DDecoder','363-050361','UIP_NULL','淡路町交差点','363-050363',to_date('2021/04/23 03:04:27','yyyy/MM/dd HH24:MI:SS')
+2021/04/23 03:04:28	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	2936	Program	Program	映像配信を行いました。
+2021/04/23 03:18:52	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'2935','363-050363','DDecoder','363-050360','UIP_NULL','小川町交差点','363-050363',to_date('2021/04/23 03:18:52','yyyy/MM/dd HH24:MI:SS')
+2021/04/23 03:18:53	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	2935	Program	Program	映像配信を行いました。
+2021/04/23 03:21:43	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'2936','363-050363','DDecoder','363-050361','UIP_NULL','淡路町交差点','363-050363',to_date('2021/04/23 03:21:43','yyyy/MM/dd HH24:MI:SS')
+2021/04/23 03:21:45	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	2936	Program	Program	映像配信を行いました。
+2021/04/23 03:22:32	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'2940','363-050363','DDecoder','363-050370','UIP_NULL','神保町交差点','363-050363',to_date('2021/04/23 03:22:32','yyyy/MM/dd HH24:MI:SS')
+2021/04/23 03:22:34	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	2940	Program	Program	映像配信を行いました。
+2021/04/23 03:23:21	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'2937','363-050363','DDecoder','363-050362','UIP_NULL','専大前交差点','363-050363',to_date('2021/04/23 03:23:21','yyyy/MM/dd HH24:MI:SS')
+2021/04/23 03:23:23	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	2937	Program	Program	映像配信を行いました。
+2021/04/23 03:27:18	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3307','363-050575','DDecoder','363-050557','UIP_NULL','四谷三丁目','363-050575',to_date('2021/04/23 03:27:18','yyyy/MM/dd HH24:MI:SS')
+2021/04/23 03:27:20	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3307	Program	Program	映像配信を行いました。

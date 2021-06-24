@@ -1,0 +1,12 @@
+2021-05-07 14:29:29,443 [Timer-34] INFO  - 0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を開始しました。 at jp.co.sei.syseng.streamingview.icon.DelIconImageTask
+2021-05-07 14:29:29,490 [Timer-34] INFO  - 0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を完了しました。 at jp.co.sei.syseng.streamingview.icon.DelIconImageTask
+2021-05-07 14:29:29,568 [Timer-35] INFO  - 0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を開始しました。 at jp.co.sei.syseng.streamingview.icon.DelIconImageTask
+2021-05-07 14:29:29,599 [Timer-35] INFO  - 0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を完了しました。 at jp.co.sei.syseng.streamingview.icon.DelIconImageTask
+2021-05-07 14:29:29,693 [Timer-36] INFO  - 0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を開始しました。 at jp.co.sei.syseng.streamingview.icon.DelIconImageTask
+2021-05-07 14:29:29,724 [Timer-36] INFO  - 0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を完了しました。 at jp.co.sei.syseng.streamingview.icon.DelIconImageTask
+2021-05-07 14:29:29,818 [Timer-37] INFO  - 0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を開始しました。 at jp.co.sei.syseng.streamingview.icon.DelIconImageTask
+2021-05-07 14:29:29,865 [Timer-37] INFO  - 0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を完了しました。 at jp.co.sei.syseng.streamingview.icon.DelIconImageTask
+2021-05-07 14:29:29,943 [Timer-38] INFO  - 0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を開始しました。 at jp.co.sei.syseng.streamingview.icon.DelIconImageTask
+2021-05-07 14:29:29,990 [Timer-38] INFO  - 0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を完了しました。 at jp.co.sei.syseng.streamingview.icon.DelIconImageTask
+2021-05-07 14:42:59,274 [[ACTIVE] ExecuteThread: '45' for queue: 'weblogic.kernel.Default (self-tuning)'] INFO  - '3345','363-050552','DDecoder','363-050533','UIP_NULL','小松川橋西詰交差点','363-050552',to_date('2021/05/07 14:42:59','yyyy/MM/dd HH24:MI:SS') at jp.co.sei.syseng.streamingview.util.DbAccessLogger
+2021-05-07 14:43:01,087 [[ACTIVE] ExecuteThread: '45' for queue: 'weblogic.kernel.Default (self-tuning)'] INFO  - 0	Streaming View	3345	Program	Program	映像配信を行いました。 at jp.co.sei.syseng.streamingview.stb.action.StbProgramAction

@@ -1,0 +1,2 @@
+2021/03/24 11:06:16	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'4149','363-050648','DDecoder','363-050638','UIP_NULL','左入橋','363-050648',to_date('2021/03/24 11:06:16','yyyy/MM/dd HH24:MI:SS')
+2021/03/24 11:06:18	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	4149	Program	Program	映像配信を行いました。

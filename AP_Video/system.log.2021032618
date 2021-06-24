@@ -1,0 +1,2 @@
+2021/03/26 18:05:08	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3067','363-050633','DDecoder','363-050415','UIP_NULL','内幸町交差点','363-050633',to_date('2021/03/26 18:05:08','yyyy/MM/dd HH24:MI:SS')
+2021/03/26 18:05:10	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3067	Program	Program	映像配信を行いました。

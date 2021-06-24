@@ -1,0 +1,12 @@
+2021/04/22 12:03:47	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3883','363-050619','DDecoder','363-050612','UIP_NULL','西浅草三丁目','363-050619',to_date('2021/04/22 12:03:47','yyyy/MM/dd HH24:MI:SS')
+2021/04/22 12:03:49	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3883	Program	Program	映像配信を行いました。
+2021/04/22 12:15:03	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'2726','363-050303','DDecoder','363-050299','UIP_NULL','新大宮バイパス入口交差点','363-050303',to_date('2021/04/22 12:15:03','yyyy/MM/dd HH24:MI:SS')
+2021/04/22 12:15:04	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	2726	Program	Program	映像配信を行いました。
+2021/04/22 12:16:05	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3309','363-050575','DDecoder','363-050560','UIP_NULL','信濃町駅前','363-050575',to_date('2021/04/22 12:16:05','yyyy/MM/dd HH24:MI:SS')
+2021/04/22 12:16:07	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3309	Program	Program	映像配信を行いました。
+2021/04/22 12:34:05	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'4410','363-050404','DDecoder','363-050649','UIP_NULL','中央防波堤入口','363-050404',to_date('2021/04/22 12:34:05','yyyy/MM/dd HH24:MI:SS')
+2021/04/22 12:34:06	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	4410	Program	Program	映像配信を行いました。
+2021/04/22 12:35:13	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'2951','363-050404','DDecoder','363-050382','UIP_NULL','シーリア前','363-050404',to_date('2021/04/22 12:35:13','yyyy/MM/dd HH24:MI:SS')
+2021/04/22 12:35:15	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	2951	Program	Program	映像配信を行いました。
+2021/04/22 12:45:35	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3076','363-050634','DDecoder','363-050418','UIP_NULL','東京国際フォーラム西交差点','363-050634',to_date('2021/04/22 12:45:35','yyyy/MM/dd HH24:MI:SS')
+2021/04/22 12:45:36	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3076	Program	Program	映像配信を行いました。

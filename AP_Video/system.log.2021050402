@@ -1,0 +1,8 @@
+2021/05/04 02:01:36	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'4150','363-050648','DDecoder','363-050639','UIP_NULL','大和田小学校前','363-050648',to_date('2021/05/04 02:01:36','yyyy/MM/dd HH24:MI:SS')
+2021/05/04 02:01:38	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	4150	Program	Program	映像配信を行いました。
+2021/05/04 02:01:57	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'4146','363-050648','DDecoder','363-050635','UIP_NULL','追分','363-050648',to_date('2021/05/04 02:01:57','yyyy/MM/dd HH24:MI:SS')
+2021/05/04 02:01:59	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	4146	Program	Program	映像配信を行いました。
+2021/05/04 02:02:25	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'4147','363-050648','DDecoder','363-050636','UIP_NULL','八王子駅入口','363-050648',to_date('2021/05/04 02:02:24','yyyy/MM/dd HH24:MI:SS')
+2021/05/04 02:02:26	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	4147	Program	Program	映像配信を行いました。
+2021/05/04 02:46:57	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'2940','363-050363','DDecoder','363-050370','UIP_NULL','神保町交差点','363-050363',to_date('2021/05/04 02:46:57','yyyy/MM/dd HH24:MI:SS')
+2021/05/04 02:46:58	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	2940	Program	Program	映像配信を行いました。

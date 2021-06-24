@@ -1,0 +1,2 @@
+2021/04/01 06:53:59	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3345','363-050552','DDecoder','363-050533','UIP_NULL','小松川橋西詰交差点','363-050552',to_date('2021/04/01 06:53:59','yyyy/MM/dd HH24:MI:SS')
+2021/04/01 06:54:01	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3345	Program	Program	映像配信を行いました。

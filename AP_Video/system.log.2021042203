@@ -1,0 +1,2 @@
+2021/04/22 03:34:45	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3188','363-050497','DDecoder','363-050493','UIP_NULL','本郷三丁目','363-050497',to_date('2021/04/22 03:34:45','yyyy/MM/dd HH24:MI:SS')
+2021/04/22 03:34:47	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3188	Program	Program	映像配信を行いました。

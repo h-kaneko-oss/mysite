@@ -1,0 +1,12 @@
+2021/03/07 05:30:27	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3308','363-050575','DDecoder','363-050559','UIP_NULL','四谷四丁目','363-050575',to_date('2021/03/07 05:30:27','yyyy/MM/dd HH24:MI:SS')
+2021/03/07 05:30:28	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3308	Program	Program	映像配信を行いました。
+2021/03/07 05:32:51	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3307','363-050575','DDecoder','363-050557','UIP_NULL','四谷三丁目','363-050575',to_date('2021/03/07 05:32:50','yyyy/MM/dd HH24:MI:SS')
+2021/03/07 05:32:52	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3307	Program	Program	映像配信を行いました。
+2021/03/07 05:33:55	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3339','363-050575','DDecoder','363-050553','UIP_NULL','四谷見附','363-050575',to_date('2021/03/07 05:33:55','yyyy/MM/dd HH24:MI:SS')
+2021/03/07 05:33:57	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3339	Program	Program	映像配信を行いました。
+2021/03/07 05:48:35	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'2611','363-050211','DDecoder','363-050209','UIP_NULL','台東四丁目交差点','363-050211',to_date('2021/03/07 05:48:35','yyyy/MM/dd HH24:MI:SS')
+2021/03/07 05:48:36	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	2611	Program	Program	映像配信を行いました。
+2021/03/07 05:51:04	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'2612','363-050211','DDecoder','363-050210','UIP_NULL','上野広小路交差点','363-050211',to_date('2021/03/07 05:51:04','yyyy/MM/dd HH24:MI:SS')
+2021/03/07 05:51:06	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	2612	Program	Program	映像配信を行いました。
+2021/03/07 05:58:31	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3065','363-050633','DDecoder','363-050413','UIP_NULL','和田倉門交差点','363-050633',to_date('2021/03/07 05:58:31','yyyy/MM/dd HH24:MI:SS')
+2021/03/07 05:58:33	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3065	Program	Program	映像配信を行いました。

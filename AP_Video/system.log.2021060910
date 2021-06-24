@@ -1,0 +1,2 @@
+2021/06/09 10:20:02	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3336','363-050589','DDecoder','363-050580','UIP_NULL','佐賀一丁目','363-050589',to_date('2021/06/09 10:20:02','yyyy/MM/dd HH24:MI:SS')
+2021/06/09 10:20:04	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3336	Program	Program	映像配信を行いました。

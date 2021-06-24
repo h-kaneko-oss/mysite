@@ -1,0 +1,2 @@
+2021/04/27 16:42:05	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3204','363-050514','DDecoder','363-050506','UIP_NULL','荻窪駅前','363-050514',to_date('2021/04/27 16:42:04','yyyy/MM/dd HH24:MI:SS')
+2021/04/27 16:42:06	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3204	Program	Program	映像配信を行いました。

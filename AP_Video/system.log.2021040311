@@ -1,0 +1,2 @@
+2021/04/03 11:41:00	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'2951','363-050404','DDecoder','363-050382','UIP_NULL','シーリア前','363-050404',to_date('2021/04/03 11:41:00','yyyy/MM/dd HH24:MI:SS')
+2021/04/03 11:41:01	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	2951	Program	Program	映像配信を行いました。

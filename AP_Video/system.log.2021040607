@@ -1,0 +1,6 @@
+2021/04/06 07:31:24	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3191','363-050497','DDecoder','363-050496','UIP_NULL','水道橋','363-050497',to_date('2021/04/06 07:31:24','yyyy/MM/dd HH24:MI:SS')
+2021/04/06 07:31:26	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3191	Program	Program	映像配信を行いました。
+2021/04/06 07:42:05	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3175','363-050482','DDecoder','363-050477','UIP_NULL','言問橋東詰','363-050482',to_date('2021/04/06 07:42:05','yyyy/MM/dd HH24:MI:SS')
+2021/04/06 07:42:07	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3175	Program	Program	映像配信を行いました。
+2021/04/06 07:45:55	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3189','363-050497','DDecoder','363-050494','UIP_NULL','本郷弥生','363-050497',to_date('2021/04/06 07:45:55','yyyy/MM/dd HH24:MI:SS')
+2021/04/06 07:45:56	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3189	Program	Program	映像配信を行いました。

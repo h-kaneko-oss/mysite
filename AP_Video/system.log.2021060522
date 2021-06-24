@@ -1,0 +1,2 @@
+2021/06/05 22:16:22	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'2954','363-050404','DDecoder','363-050385','UIP_NULL','台場トンネル出口','363-050404',to_date('2021/06/05 22:16:22','yyyy/MM/dd HH24:MI:SS')
+2021/06/05 22:16:24	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	2954	Program	Program	映像配信を行いました。

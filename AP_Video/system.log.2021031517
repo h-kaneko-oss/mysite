@@ -1,0 +1,12 @@
+2021/03/15 17:07:12	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'2745','363-050274','DDecoder','363-050265','UIP_NULL','葛西駅南交差点','363-050274',to_date('2021/03/15 17:07:12','yyyy/MM/dd HH24:MI:SS')
+2021/03/15 17:07:14	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	2745	Program	Program	映像配信を行いました。
+2021/03/15 17:08:40	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3349','363-050552','DDecoder','363-050537','UIP_NULL','八蔵橋交差点','363-050552',to_date('2021/03/15 17:08:40','yyyy/MM/dd HH24:MI:SS')
+2021/03/15 17:08:42	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3349	Program	Program	映像配信を行いました。
+2021/03/15 17:09:25	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3351','363-050552','DDecoder','363-050539','UIP_NULL','葛西工高前交差点','363-050552',to_date('2021/03/15 17:09:25','yyyy/MM/dd HH24:MI:SS')
+2021/03/15 17:09:27	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3351	Program	Program	映像配信を行いました。
+2021/03/15 17:21:18	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3309','363-050575','DDecoder','363-050560','UIP_NULL','信濃町駅前','363-050575',to_date('2021/03/15 17:21:18','yyyy/MM/dd HH24:MI:SS')
+2021/03/15 17:21:19	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3309	Program	Program	映像配信を行いました。
+2021/03/15 17:29:03	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'2857','363-050329','DDecoder','363-050327','UIP_NULL','丸子橋交差点','363-050329',to_date('2021/03/15 17:29:03','yyyy/MM/dd HH24:MI:SS')
+2021/03/15 17:29:05	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	2857	Program	Program	映像配信を行いました。
+2021/03/15 17:43:15	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3304','363-050575','DDecoder','363-050554','UIP_NULL','新宿三丁目','363-050575',to_date('2021/03/15 17:43:15','yyyy/MM/dd HH24:MI:SS')
+2021/03/15 17:43:17	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3304	Program	Program	映像配信を行いました。

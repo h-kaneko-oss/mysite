@@ -1,0 +1,12 @@
+2021/04/05 21:25:50	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3314','363-050575','DDecoder','363-050558','UIP_NULL','新宿二丁目','363-050575',to_date('2021/04/05 21:25:50','yyyy/MM/dd HH24:MI:SS')
+2021/04/05 21:25:52	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3314	Program	Program	映像配信を行いました。
+2021/04/05 21:26:25	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3312','363-050575','DDecoder','363-050563','UIP_NULL','柳通り','363-050575',to_date('2021/04/05 21:26:25','yyyy/MM/dd HH24:MI:SS')
+2021/04/05 21:26:27	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3312	Program	Program	映像配信を行いました。
+2021/04/05 21:46:01	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3304','363-050575','DDecoder','363-050554','UIP_NULL','新宿三丁目','363-050575',to_date('2021/04/05 21:46:01','yyyy/MM/dd HH24:MI:SS')
+2021/04/05 21:46:02	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3304	Program	Program	映像配信を行いました。
+2021/04/05 21:47:00	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3312','363-050575','DDecoder','363-050563','UIP_NULL','柳通り','363-050575',to_date('2021/04/05 21:47:00','yyyy/MM/dd HH24:MI:SS')
+2021/04/05 21:47:02	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3312	Program	Program	映像配信を行いました。
+2021/04/05 21:48:01	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3311','363-050575','DDecoder','363-050562','UIP_NULL','若葉東','363-050575',to_date('2021/04/05 21:48:01','yyyy/MM/dd HH24:MI:SS')
+2021/04/05 21:48:03	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3311	Program	Program	映像配信を行いました。
+2021/04/05 21:55:55	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3312','363-050575','DDecoder','363-050563','UIP_NULL','柳通り','363-050575',to_date('2021/04/05 21:55:55','yyyy/MM/dd HH24:MI:SS')
+2021/04/05 21:55:56	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3312	Program	Program	映像配信を行いました。

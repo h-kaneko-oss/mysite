@@ -1,0 +1,12 @@
+2021/06/10 21:14:15	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'2493','363-050166','DDecoder','363-050154','UIP_NULL','新橋駅銀座口前交差点','363-050166',to_date('2021/06/10 21:14:15','yyyy/MM/dd HH24:MI:SS')
+2021/06/10 21:14:17	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	2493	Program	Program	映像配信を行いました。
+2021/06/10 21:16:12	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'2492','363-050166','DDecoder','363-050153','UIP_NULL','新橋一丁目交差点','363-050166',to_date('2021/06/10 21:16:12','yyyy/MM/dd HH24:MI:SS')
+2021/06/10 21:16:14	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	2492	Program	Program	映像配信を行いました。
+2021/06/10 21:17:51	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'2490','363-050166','DDecoder','363-050150','UIP_NULL','東新橋一丁目交差点','363-050166',to_date('2021/06/10 21:17:51','yyyy/MM/dd HH24:MI:SS')
+2021/06/10 21:17:53	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	2490	Program	Program	映像配信を行いました。
+2021/06/10 21:18:29	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'2493','363-050166','DDecoder','363-050154','UIP_NULL','新橋駅銀座口前交差点','363-050166',to_date('2021/06/10 21:18:29','yyyy/MM/dd HH24:MI:SS')
+2021/06/10 21:18:31	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	2493	Program	Program	映像配信を行いました。
+2021/06/10 21:19:56	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'2492','363-050166','DDecoder','363-050153','UIP_NULL','新橋一丁目交差点','363-050166',to_date('2021/06/10 21:19:56','yyyy/MM/dd HH24:MI:SS')
+2021/06/10 21:19:58	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	2492	Program	Program	映像配信を行いました。
+2021/06/10 21:53:17	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'2714','363-050166','DDecoder','363-050288','UIP_NULL','新橋駅日比谷口前交差点','363-050166',to_date('2021/06/10 21:53:17','yyyy/MM/dd HH24:MI:SS')
+2021/06/10 21:53:20	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	2714	Program	Program	映像配信を行いました。

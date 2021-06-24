@@ -1,0 +1,2 @@
+2021-03-08 11:13:12,081 [[ACTIVE] ExecuteThread: '23' for queue: 'weblogic.kernel.Default (self-tuning)'] INFO  - '3207','363-050514','DDecoder','363-050509','UIP_NULL','善福寺','363-050514',to_date('2021/03/08 11:13:12','yyyy/MM/dd HH24:MI:SS') at jp.co.sei.syseng.streamingview.util.DbAccessLogger
+2021-03-08 11:13:13,612 [[ACTIVE] ExecuteThread: '23' for queue: 'weblogic.kernel.Default (self-tuning)'] INFO  - 0	Streaming View	3207	Program	Program	映像配信を行いました。 at jp.co.sei.syseng.streamingview.stb.action.StbProgramAction

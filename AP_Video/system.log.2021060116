@@ -1,0 +1,2 @@
+2021/06/01 16:43:44	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'2484','363-050166','DDecoder','363-050144','UIP_NULL','浜松町一丁目交差点','363-050166',to_date('2021/06/01 16:43:44','yyyy/MM/dd HH24:MI:SS')
+2021/06/01 16:43:46	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	2484	Program	Program	映像配信を行いました。

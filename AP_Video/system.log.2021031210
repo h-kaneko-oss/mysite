@@ -1,0 +1,6 @@
+2021/03/12 10:08:39	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3186','363-050497','DDecoder','363-050491','UIP_NULL','湯島五差路','363-050497',to_date('2021/03/12 10:08:39','yyyy/MM/dd HH24:MI:SS')
+2021/03/12 10:08:40	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3186	Program	Program	映像配信を行いました。
+2021/03/12 10:08:58	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3185','363-050497','DDecoder','363-050490','UIP_NULL','天神下','363-050497',to_date('2021/03/12 10:08:58','yyyy/MM/dd HH24:MI:SS')
+2021/03/12 10:09:00	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3185	Program	Program	映像配信を行いました。
+2021/03/12 10:11:50	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3188','363-050497','DDecoder','363-050493','UIP_NULL','本郷三丁目','363-050497',to_date('2021/03/12 10:11:50','yyyy/MM/dd HH24:MI:SS')
+2021/03/12 10:11:52	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3188	Program	Program	映像配信を行いました。

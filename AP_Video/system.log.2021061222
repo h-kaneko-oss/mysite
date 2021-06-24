@@ -1,0 +1,2 @@
+2021/06/12 22:32:35	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'4151','363-050648','DDecoder','363-050640','UIP_NULL','ひよどり山分室','363-050648',to_date('2021/06/12 22:32:35','yyyy/MM/dd HH24:MI:SS')
+2021/06/12 22:32:37	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	4151	Program	Program	映像配信を行いました。

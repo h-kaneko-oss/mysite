@@ -1,0 +1,24 @@
+2021/05/26 08:07:20	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3349','363-050552','DDecoder','363-050537','UIP_NULL','八蔵橋交差点','363-050552',to_date('2021/05/26 08:07:20','yyyy/MM/dd HH24:MI:SS')
+2021/05/26 08:07:22	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3349	Program	Program	映像配信を行いました。
+2021/05/26 08:12:40	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3883','363-050619','DDecoder','363-050612','UIP_NULL','西浅草三丁目','363-050619',to_date('2021/05/26 08:12:40','yyyy/MM/dd HH24:MI:SS')
+2021/05/26 08:12:42	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3883	Program	Program	映像配信を行いました。
+2021/05/26 08:12:59	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3884','363-050619','DDecoder','363-050613','UIP_NULL','言問橋西詰','363-050619',to_date('2021/05/26 08:12:59','yyyy/MM/dd HH24:MI:SS')
+2021/05/26 08:13:01	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3884	Program	Program	映像配信を行いました。
+2021/05/26 08:39:01	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3339','363-050575','DDecoder','363-050553','UIP_NULL','四谷見附','363-050575',to_date('2021/05/26 08:39:01','yyyy/MM/dd HH24:MI:SS')
+2021/05/26 08:39:03	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3339	Program	Program	映像配信を行いました。
+2021/05/26 08:40:33	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'2945','363-050404','DDecoder','363-050376','UIP_NULL','大井環七第二','363-050404',to_date('2021/05/26 08:40:33','yyyy/MM/dd HH24:MI:SS')
+2021/05/26 08:40:35	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	2945	Program	Program	映像配信を行いました。
+2021/05/26 08:43:00	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'2948','363-050404','DDecoder','363-050379','UIP_NULL','大井中央陸橋下','363-050404',to_date('2021/05/26 08:43:00','yyyy/MM/dd HH24:MI:SS')
+2021/05/26 08:43:02	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	2948	Program	Program	映像配信を行いました。
+2021/05/26 08:43:26	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'2944','363-050404','DDecoder','363-050375','UIP_NULL','汐路橋','363-050404',to_date('2021/05/26 08:43:26','yyyy/MM/dd HH24:MI:SS')
+2021/05/26 08:43:28	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	2944	Program	Program	映像配信を行いました。
+2021/05/26 08:43:48	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'2946','363-050404','DDecoder','363-050377','UIP_NULL','京浜大橋北','363-050404',to_date('2021/05/26 08:43:48','yyyy/MM/dd HH24:MI:SS')
+2021/05/26 08:43:50	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	2946	Program	Program	映像配信を行いました。
+2021/05/26 08:45:06	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'2948','363-050404','DDecoder','363-050379','UIP_NULL','大井中央陸橋下','363-050404',to_date('2021/05/26 08:45:06','yyyy/MM/dd HH24:MI:SS')
+2021/05/26 08:45:08	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	2948	Program	Program	映像配信を行いました。
+2021/05/26 08:45:45	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'2947','363-050404','DDecoder','363-050378','UIP_NULL','京浜大橋南','363-050404',to_date('2021/05/26 08:45:45','yyyy/MM/dd HH24:MI:SS')
+2021/05/26 08:45:47	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	2947	Program	Program	映像配信を行いました。
+2021/05/26 08:46:09	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'2945','363-050404','DDecoder','363-050376','UIP_NULL','大井環七第二','363-050404',to_date('2021/05/26 08:46:08','yyyy/MM/dd HH24:MI:SS')
+2021/05/26 08:46:10	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	2945	Program	Program	映像配信を行いました。
+2021/05/26 08:48:51	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3189','363-050497','DDecoder','363-050494','UIP_NULL','本郷弥生','363-050497',to_date('2021/05/26 08:48:51','yyyy/MM/dd HH24:MI:SS')
+2021/05/26 08:48:53	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3189	Program	Program	映像配信を行いました。

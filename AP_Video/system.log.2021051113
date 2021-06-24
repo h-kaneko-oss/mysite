@@ -1,0 +1,2 @@
+2021/05/11 13:00:19	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3312','363-050575','DDecoder','363-050563','UIP_NULL','柳通り','363-050575',to_date('2021/05/11 13:00:19','yyyy/MM/dd HH24:MI:SS')
+2021/05/11 13:00:21	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3312	Program	Program	映像配信を行いました。

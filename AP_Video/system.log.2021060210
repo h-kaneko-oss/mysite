@@ -1,0 +1,4 @@
+2021/06/02 10:44:19	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3186','363-050497','DDecoder','363-050491','UIP_NULL','湯島五差路','363-050497',to_date('2021/06/02 10:44:19','yyyy/MM/dd HH24:MI:SS')
+2021/06/02 10:44:21	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3186	Program	Program	映像配信を行いました。
+2021/06/02 10:45:16	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3187','363-050497','DDecoder','363-050492','UIP_NULL','順天堂前','363-050497',to_date('2021/06/02 10:45:16','yyyy/MM/dd HH24:MI:SS')
+2021/06/02 10:45:18	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3187	Program	Program	映像配信を行いました。

@@ -1,0 +1,2 @@
+2021-05-07 12:26:42,565 [[ACTIVE] ExecuteThread: '20' for queue: 'weblogic.kernel.Default (self-tuning)'] INFO  - '2344','363-050063','DDecoder','363-050062','UIP_NULL','大井町駅西口交差点','363-050063',to_date('2021/05/07 12:26:42','yyyy/MM/dd HH24:MI:SS') at jp.co.sei.syseng.streamingview.util.DbAccessLogger
+2021-05-07 12:26:44,362 [[ACTIVE] ExecuteThread: '20' for queue: 'weblogic.kernel.Default (self-tuning)'] INFO  - 0	Streaming View	2344	Program	Program	映像配信を行いました。 at jp.co.sei.syseng.streamingview.stb.action.StbProgramAction

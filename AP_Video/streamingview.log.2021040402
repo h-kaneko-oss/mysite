@@ -1,0 +1,2 @@
+2021-04-04 02:57:00,063 [[ACTIVE] ExecuteThread: '51' for queue: 'weblogic.kernel.Default (self-tuning)'] INFO  - '3214','363-050514','DDecoder','363-050512','UIP_NULL','井荻トンネル南換気所','363-050514',to_date('2021/04/04 02:57:00','yyyy/MM/dd HH24:MI:SS') at jp.co.sei.syseng.streamingview.util.DbAccessLogger
+2021-04-04 02:57:01,735 [[ACTIVE] ExecuteThread: '51' for queue: 'weblogic.kernel.Default (self-tuning)'] INFO  - 0	Streaming View	3214	Program	Program	映像配信を行いました。 at jp.co.sei.syseng.streamingview.stb.action.StbProgramAction

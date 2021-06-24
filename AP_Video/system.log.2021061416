@@ -1,0 +1,6 @@
+2021/06/14 16:58:09	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3339','363-050575','DDecoder','363-050553','UIP_NULL','四谷見附','363-050575',to_date('2021/06/14 16:58:09','yyyy/MM/dd HH24:MI:SS')
+2021/06/14 16:58:11	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3339	Program	Program	映像配信を行いました。
+2021/06/14 16:59:33	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3309','363-050575','DDecoder','363-050560','UIP_NULL','信濃町駅前','363-050575',to_date('2021/06/14 16:59:33','yyyy/MM/dd HH24:MI:SS')
+2021/06/14 16:59:35	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3309	Program	Program	映像配信を行いました。
+2021/06/14 16:59:49	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'2958','363-050404','DDecoder','363-050389','UIP_NULL','新橋庁舎','363-050404',to_date('2021/06/14 16:59:48','yyyy/MM/dd HH24:MI:SS')
+2021/06/14 16:59:50	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	2958	Program	Program	映像配信を行いました。

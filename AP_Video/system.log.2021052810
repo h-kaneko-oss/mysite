@@ -1,0 +1,36 @@
+2021/05/28 10:01:07	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'2950','363-050404','DDecoder','363-050381','UIP_NULL','潮風公園北','363-050404',to_date('2021/05/28 10:01:07','yyyy/MM/dd HH24:MI:SS')
+2021/05/28 10:01:09	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	2950	Program	Program	映像配信を行いました。
+2021/05/28 10:01:12	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3347','363-050552','DDecoder','363-050535','UIP_NULL','平井駅出口交差点','363-050552',to_date('2021/05/28 10:01:12','yyyy/MM/dd HH24:MI:SS')
+2021/05/28 10:01:14	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3347	Program	Program	映像配信を行いました。
+2021/05/28 10:02:00	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'4411','363-050404','DDecoder','363-050650','UIP_NULL','有明テニスの森','363-050404',to_date('2021/05/28 10:02:00','yyyy/MM/dd HH24:MI:SS')
+2021/05/28 10:02:02	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	4411	Program	Program	映像配信を行いました。
+2021/05/28 10:11:50	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3885','363-050619','DDecoder','363-050614','UIP_NULL','吾妻橋西詰','363-050619',to_date('2021/05/28 10:11:49','yyyy/MM/dd HH24:MI:SS')
+2021/05/28 10:11:51	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3885	Program	Program	映像配信を行いました。
+2021/05/28 10:19:09	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3189','363-050497','DDecoder','363-050494','UIP_NULL','本郷弥生','363-050497',to_date('2021/05/28 10:19:09','yyyy/MM/dd HH24:MI:SS')
+2021/05/28 10:19:11	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3189	Program	Program	映像配信を行いました。
+2021/05/28 10:24:36	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3189','363-050497','DDecoder','363-050494','UIP_NULL','本郷弥生','363-050497',to_date('2021/05/28 10:24:36','yyyy/MM/dd HH24:MI:SS')
+2021/05/28 10:24:38	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3189	Program	Program	映像配信を行いました。
+2021/05/28 10:28:31	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3184','363-050497','DDecoder','363-050489','UIP_NULL','根津一丁目','363-050497',to_date('2021/05/28 10:28:31','yyyy/MM/dd HH24:MI:SS')
+2021/05/28 10:28:33	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3184	Program	Program	映像配信を行いました。
+2021/05/28 10:30:29	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3189','363-050497','DDecoder','363-050494','UIP_NULL','本郷弥生','363-050497',to_date('2021/05/28 10:30:29','yyyy/MM/dd HH24:MI:SS')
+2021/05/28 10:30:31	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3189	Program	Program	映像配信を行いました。
+2021/05/28 10:35:48	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3184','363-050497','DDecoder','363-050489','UIP_NULL','根津一丁目','363-050497',to_date('2021/05/28 10:35:48','yyyy/MM/dd HH24:MI:SS')
+2021/05/28 10:35:50	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3184	Program	Program	映像配信を行いました。
+2021/05/28 10:41:34	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3186','363-050497','DDecoder','363-050491','UIP_NULL','湯島五差路','363-050497',to_date('2021/05/28 10:41:34','yyyy/MM/dd HH24:MI:SS')
+2021/05/28 10:41:36	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3186	Program	Program	映像配信を行いました。
+2021/05/28 10:47:32	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3184','363-050497','DDecoder','363-050489','UIP_NULL','根津一丁目','363-050497',to_date('2021/05/28 10:47:32','yyyy/MM/dd HH24:MI:SS')
+2021/05/28 10:47:34	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3184	Program	Program	映像配信を行いました。
+2021/05/28 10:48:18	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3184','363-050497','DDecoder','363-050489','UIP_NULL','根津一丁目','363-050497',to_date('2021/05/28 10:48:18','yyyy/MM/dd HH24:MI:SS')
+2021/05/28 10:48:21	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3184	Program	Program	映像配信を行いました。
+2021/05/28 10:48:42	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3185','363-050497','DDecoder','363-050490','UIP_NULL','天神下','363-050497',to_date('2021/05/28 10:48:42','yyyy/MM/dd HH24:MI:SS')
+2021/05/28 10:48:44	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3185	Program	Program	映像配信を行いました。
+2021/05/28 10:49:02	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3184','363-050497','DDecoder','363-050489','UIP_NULL','根津一丁目','363-050497',to_date('2021/05/28 10:49:02','yyyy/MM/dd HH24:MI:SS')
+2021/05/28 10:49:03	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3184	Program	Program	映像配信を行いました。
+2021/05/28 10:52:19	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'2745','363-050274','DDecoder','363-050265','UIP_NULL','葛西駅南交差点','363-050274',to_date('2021/05/28 10:52:19','yyyy/MM/dd HH24:MI:SS')
+2021/05/28 10:52:21	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	2745	Program	Program	映像配信を行いました。
+2021/05/28 10:53:39	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3305','363-050575','DDecoder','363-050555','UIP_NULL','新宿五丁目','363-050575',to_date('2021/05/28 10:53:39','yyyy/MM/dd HH24:MI:SS')
+2021/05/28 10:53:41	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3305	Program	Program	映像配信を行いました。
+2021/05/28 10:55:01	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'2744','363-050274','DDecoder','363-050264','UIP_NULL','長島町交差点','363-050274',to_date('2021/05/28 10:55:01','yyyy/MM/dd HH24:MI:SS')
+2021/05/28 10:55:03	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	2744	Program	Program	映像配信を行いました。
+2021/05/28 10:55:22	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'2745','363-050274','DDecoder','363-050265','UIP_NULL','葛西駅南交差点','363-050274',to_date('2021/05/28 10:55:22','yyyy/MM/dd HH24:MI:SS')
+2021/05/28 10:55:24	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	2745	Program	Program	映像配信を行いました。

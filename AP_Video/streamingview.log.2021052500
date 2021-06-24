@@ -1,0 +1,2 @@
+2021-05-25 00:45:21,477 [[ACTIVE] ExecuteThread: '43' for queue: 'weblogic.kernel.Default (self-tuning)'] INFO  - '3310','363-050575','DDecoder','363-050561','UIP_NULL','新宿五丁目東','363-050575',to_date('2021/05/25 00:45:21','yyyy/MM/dd HH24:MI:SS') at jp.co.sei.syseng.streamingview.util.DbAccessLogger
+2021-05-25 00:45:23,368 [[ACTIVE] ExecuteThread: '43' for queue: 'weblogic.kernel.Default (self-tuning)'] INFO  - 0	Streaming View	3310	Program	Program	映像配信を行いました。 at jp.co.sei.syseng.streamingview.stb.action.StbProgramAction

@@ -1,0 +1,2 @@
+2021/05/10 00:50:10	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'4411','363-050404','DDecoder','363-050650','UIP_NULL','有明テニスの森','363-050404',to_date('2021/05/10 00:50:10','yyyy/MM/dd HH24:MI:SS')
+2021/05/10 00:50:12	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	4411	Program	Program	映像配信を行いました。

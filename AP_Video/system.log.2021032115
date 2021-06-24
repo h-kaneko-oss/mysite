@@ -1,0 +1,8 @@
+2021/03/21 15:11:43	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3068','363-050634','DDecoder','363-050419','UIP_NULL','西幸門前交差点','363-050634',to_date('2021/03/21 15:11:43','yyyy/MM/dd HH24:MI:SS')
+2021/03/21 15:11:44	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3068	Program	Program	映像配信を行いました。
+2021/03/21 15:12:59	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3067','363-050634','DDecoder','363-050415','UIP_NULL','内幸町交差点','363-050634',to_date('2021/03/21 15:12:59','yyyy/MM/dd HH24:MI:SS')
+2021/03/21 15:13:01	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3067	Program	Program	映像配信を行いました。
+2021/03/21 15:38:58	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3068','363-050634','DDecoder','363-050419','UIP_NULL','西幸門前交差点','363-050634',to_date('2021/03/21 15:38:58','yyyy/MM/dd HH24:MI:SS')
+2021/03/21 15:39:00	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3068	Program	Program	映像配信を行いました。
+2021/03/21 15:51:34	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3076','363-050634','DDecoder','363-050418','UIP_NULL','東京国際フォーラム西交差点','363-050634',to_date('2021/03/21 15:51:34','yyyy/MM/dd HH24:MI:SS')
+2021/03/21 15:51:35	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3076	Program	Program	映像配信を行いました。

@@ -1,0 +1,4 @@
+2021/04/03 00:09:37	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3075','363-050633','DDecoder','363-050417','UIP_NULL','新国際ビル前交差点','363-050633',to_date('2021/04/03 00:09:37','yyyy/MM/dd HH24:MI:SS')
+2021/04/03 00:09:39	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3075	Program	Program	映像配信を行いました。
+2021/04/03 00:10:25	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3076','363-050633','DDecoder','363-050418','UIP_NULL','東京国際フォーラム西交差点','363-050633',to_date('2021/04/03 00:10:25','yyyy/MM/dd HH24:MI:SS')
+2021/04/03 00:10:26	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3076	Program	Program	映像配信を行いました。

@@ -1,0 +1,12 @@
+2021/03/24 04:14:44	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3209','363-050514','DDecoder','363-050511','UIP_NULL','川南五差路','363-050514',to_date('2021/03/24 04:14:44','yyyy/MM/dd HH24:MI:SS')
+2021/03/24 04:14:45	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3209	Program	Program	映像配信を行いました。
+2021/03/24 04:42:06	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3185','363-050497','DDecoder','363-050490','UIP_NULL','天神下','363-050497',to_date('2021/03/24 04:42:06','yyyy/MM/dd HH24:MI:SS')
+2021/03/24 04:42:07	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3185	Program	Program	映像配信を行いました。
+2021/03/24 04:43:03	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3185','363-050497','DDecoder','363-050490','UIP_NULL','天神下','363-050497',to_date('2021/03/24 04:43:03','yyyy/MM/dd HH24:MI:SS')
+2021/03/24 04:43:04	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3185	Program	Program	映像配信を行いました。
+2021/03/24 04:46:14	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3190','363-050497','DDecoder','363-050495','UIP_NULL','お茶の水','363-050497',to_date('2021/03/24 04:46:14','yyyy/MM/dd HH24:MI:SS')
+2021/03/24 04:46:16	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3190	Program	Program	映像配信を行いました。
+2021/03/24 04:47:03	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3185','363-050497','DDecoder','363-050490','UIP_NULL','天神下','363-050497',to_date('2021/03/24 04:47:03','yyyy/MM/dd HH24:MI:SS')
+2021/03/24 04:47:05	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3185	Program	Program	映像配信を行いました。
+2021/03/24 04:47:30	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3312','363-050575','DDecoder','363-050563','UIP_NULL','柳通り','363-050575',to_date('2021/03/24 04:47:30','yyyy/MM/dd HH24:MI:SS')
+2021/03/24 04:47:31	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3312	Program	Program	映像配信を行いました。

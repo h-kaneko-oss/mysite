@@ -1,0 +1,2 @@
+2021-03-14 00:47:18,314 [[ACTIVE] ExecuteThread: '14' for queue: 'weblogic.kernel.Default (self-tuning)'] INFO  - '3324','363-050589','DDecoder','363-050578','UIP_NULL','ñLèFâwëO','363-050589',to_date('2021/03/14 00:47:18','yyyy/MM/dd HH24:MI:SS') at jp.co.sei.syseng.streamingview.util.DbAccessLogger
+2021-03-14 00:47:19,892 [[ACTIVE] ExecuteThread: '14' for queue: 'weblogic.kernel.Default (self-tuning)'] INFO  - 0	Streaming View	3324	Program	Program	âfëúîzêMÇçsÇ¢Ç‹ÇµÇΩÅB at jp.co.sei.syseng.streamingview.stb.action.StbProgramAction

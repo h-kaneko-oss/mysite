@@ -1,0 +1,2 @@
+2021/05/31 23:13:21	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'2612','363-050211','DDecoder','363-050210','UIP_NULL','上野広小路交差点','363-050211',to_date('2021/05/31 23:13:21','yyyy/MM/dd HH24:MI:SS')
+2021/05/31 23:13:23	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	2612	Program	Program	映像配信を行いました。

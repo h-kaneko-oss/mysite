@@ -1,0 +1,18 @@
+2021/04/18 14:29:42	INFO	jp.co.sei.syseng.streamingview.icon.DelIconImageTask	0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を開始しました。
+2021/04/18 14:29:42	INFO	jp.co.sei.syseng.streamingview.icon.DelIconImageTask	0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を完了しました。
+2021/04/18 14:29:42	INFO	jp.co.sei.syseng.streamingview.icon.DelIconImageTask	0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を開始しました。
+2021/04/18 14:29:42	INFO	jp.co.sei.syseng.streamingview.icon.DelIconImageTask	0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を完了しました。
+2021/04/18 14:29:43	INFO	jp.co.sei.syseng.streamingview.icon.DelIconImageTask	0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を開始しました。
+2021/04/18 14:29:43	INFO	jp.co.sei.syseng.streamingview.icon.DelIconImageTask	0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を完了しました。
+2021/04/18 14:29:43	INFO	jp.co.sei.syseng.streamingview.icon.DelIconImageTask	0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を開始しました。
+2021/04/18 14:29:43	INFO	jp.co.sei.syseng.streamingview.icon.DelIconImageTask	0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を完了しました。
+2021/04/18 14:29:43	INFO	jp.co.sei.syseng.streamingview.icon.DelIconImageTask	0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を開始しました。
+2021/04/18 14:29:43	INFO	jp.co.sei.syseng.streamingview.icon.DelIconImageTask	0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を完了しました。
+2021/04/18 14:32:59	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'2950','363-050404','DDecoder','363-050381','UIP_NULL','潮風公園北','363-050404',to_date('2021/04/18 14:32:59','yyyy/MM/dd HH24:MI:SS')
+2021/04/18 14:33:01	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	2950	Program	Program	映像配信を行いました。
+2021/04/18 14:41:49	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3305','363-050575','DDecoder','363-050555','UIP_NULL','新宿五丁目','363-050575',to_date('2021/04/18 14:41:49','yyyy/MM/dd HH24:MI:SS')
+2021/04/18 14:41:50	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3305	Program	Program	映像配信を行いました。
+2021/04/18 14:42:40	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3304','363-050575','DDecoder','363-050554','UIP_NULL','新宿三丁目','363-050575',to_date('2021/04/18 14:42:40','yyyy/MM/dd HH24:MI:SS')
+2021/04/18 14:42:42	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3304	Program	Program	映像配信を行いました。
+2021/04/18 14:57:55	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3305','363-050575','DDecoder','363-050555','UIP_NULL','新宿五丁目','363-050575',to_date('2021/04/18 14:57:55','yyyy/MM/dd HH24:MI:SS')
+2021/04/18 14:57:56	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3305	Program	Program	映像配信を行いました。

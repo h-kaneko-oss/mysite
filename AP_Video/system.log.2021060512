@@ -1,0 +1,12 @@
+2021/06/05 12:54:34	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3335','363-050589','DDecoder','363-050579','UIP_NULL','木場五丁目','363-050589',to_date('2021/06/05 12:54:34','yyyy/MM/dd HH24:MI:SS')
+2021/06/05 12:54:36	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3335	Program	Program	映像配信を行いました。
+2021/06/05 12:55:23	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3336','363-050589','DDecoder','363-050580','UIP_NULL','佐賀一丁目','363-050589',to_date('2021/06/05 12:55:23','yyyy/MM/dd HH24:MI:SS')
+2021/06/05 12:55:25	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3336	Program	Program	映像配信を行いました。
+2021/06/05 12:56:12	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3337','363-050589','DDecoder','363-050581','UIP_NULL','東陽六丁目','363-050589',to_date('2021/06/05 12:56:12','yyyy/MM/dd HH24:MI:SS')
+2021/06/05 12:56:14	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3337	Program	Program	映像配信を行いました。
+2021/06/05 12:56:46	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3338','363-050589','DDecoder','363-050582','UIP_NULL','東陽町駅前','363-050589',to_date('2021/06/05 12:56:46','yyyy/MM/dd HH24:MI:SS')
+2021/06/05 12:56:48	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3338	Program	Program	映像配信を行いました。
+2021/06/05 12:57:13	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3324','363-050589','DDecoder','363-050578','UIP_NULL','豊洲駅前','363-050589',to_date('2021/06/05 12:57:13','yyyy/MM/dd HH24:MI:SS')
+2021/06/05 12:57:15	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3324	Program	Program	映像配信を行いました。
+2021/06/05 12:58:14	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3204','363-050514','DDecoder','363-050506','UIP_NULL','荻窪駅前','363-050514',to_date('2021/06/05 12:58:14','yyyy/MM/dd HH24:MI:SS')
+2021/06/05 12:58:16	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3204	Program	Program	映像配信を行いました。

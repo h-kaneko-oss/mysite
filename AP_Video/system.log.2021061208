@@ -1,0 +1,2 @@
+2021/06/12 08:38:27	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'2854','363-050329','DDecoder','363-050324','UIP_NULL','洗足五差路交差点','363-050329',to_date('2021/06/12 08:38:27','yyyy/MM/dd HH24:MI:SS')
+2021/06/12 08:38:30	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	2854	Program	Program	映像配信を行いました。

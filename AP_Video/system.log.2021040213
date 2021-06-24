@@ -1,0 +1,2 @@
+2021/04/02 13:48:30	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'4410','363-050404','DDecoder','363-050649','UIP_NULL','中央防波堤入口','363-050404',to_date('2021/04/02 13:48:30','yyyy/MM/dd HH24:MI:SS')
+2021/04/02 13:48:32	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	4410	Program	Program	映像配信を行いました。

@@ -1,0 +1,12 @@
+2021/03/09 14:29:42	INFO	jp.co.sei.syseng.streamingview.icon.DelIconImageTask	0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を開始しました。
+2021/03/09 14:29:42	INFO	jp.co.sei.syseng.streamingview.icon.DelIconImageTask	0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を完了しました。
+2021/03/09 14:29:42	INFO	jp.co.sei.syseng.streamingview.icon.DelIconImageTask	0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を開始しました。
+2021/03/09 14:29:43	INFO	jp.co.sei.syseng.streamingview.icon.DelIconImageTask	0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を完了しました。
+2021/03/09 14:29:43	INFO	jp.co.sei.syseng.streamingview.icon.DelIconImageTask	0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を開始しました。
+2021/03/09 14:29:43	INFO	jp.co.sei.syseng.streamingview.icon.DelIconImageTask	0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を完了しました。
+2021/03/09 14:29:43	INFO	jp.co.sei.syseng.streamingview.icon.DelIconImageTask	0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を開始しました。
+2021/03/09 14:29:43	INFO	jp.co.sei.syseng.streamingview.icon.DelIconImageTask	0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を完了しました。
+2021/03/09 14:29:43	INFO	jp.co.sei.syseng.streamingview.icon.DelIconImageTask	0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を開始しました。
+2021/03/09 14:29:43	INFO	jp.co.sei.syseng.streamingview.icon.DelIconImageTask	0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を完了しました。
+2021/03/09 14:56:46	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3354','363-050610','DDecoder','363-050592','UIP_NULL','亀戸四丁目','363-050610',to_date('2021/03/09 14:56:46','yyyy/MM/dd HH24:MI:SS')
+2021/03/09 14:56:47	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3354	Program	Program	映像配信を行いました。

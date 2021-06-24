@@ -1,0 +1,14 @@
+2021/04/27 14:00:07	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'2952','363-050404','DDecoder','363-050383','UIP_NULL','大井埠頭第五','363-050404',to_date('2021/04/27 14:00:07','yyyy/MM/dd HH24:MI:SS')
+2021/04/27 14:00:09	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	2952	Program	Program	映像配信を行いました。
+2021/04/27 14:09:00	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'4410','363-050404','DDecoder','363-050649','UIP_NULL','中央防波堤入口','363-050404',to_date('2021/04/27 14:09:00','yyyy/MM/dd HH24:MI:SS')
+2021/04/27 14:09:02	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	4410	Program	Program	映像配信を行いました。
+2021/04/27 14:29:29	INFO	jp.co.sei.syseng.streamingview.icon.DelIconImageTask	0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を開始しました。
+2021/04/27 14:29:29	INFO	jp.co.sei.syseng.streamingview.icon.DelIconImageTask	0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を完了しました。
+2021/04/27 14:29:29	INFO	jp.co.sei.syseng.streamingview.icon.DelIconImageTask	0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を開始しました。
+2021/04/27 14:29:29	INFO	jp.co.sei.syseng.streamingview.icon.DelIconImageTask	0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を完了しました。
+2021/04/27 14:29:29	INFO	jp.co.sei.syseng.streamingview.icon.DelIconImageTask	0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を開始しました。
+2021/04/27 14:29:29	INFO	jp.co.sei.syseng.streamingview.icon.DelIconImageTask	0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を完了しました。
+2021/04/27 14:29:29	INFO	jp.co.sei.syseng.streamingview.icon.DelIconImageTask	0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を開始しました。
+2021/04/27 14:29:29	INFO	jp.co.sei.syseng.streamingview.icon.DelIconImageTask	0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を完了しました。
+2021/04/27 14:29:29	INFO	jp.co.sei.syseng.streamingview.icon.DelIconImageTask	0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を開始しました。
+2021/04/27 14:29:29	INFO	jp.co.sei.syseng.streamingview.icon.DelIconImageTask	0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を完了しました。

@@ -1,0 +1,2 @@
+2021/05/24 23:38:15	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'2938','363-050363','DDecoder','363-050358','UIP_NULL','錦町河岸交差点','363-050363',to_date('2021/05/24 23:38:15','yyyy/MM/dd HH24:MI:SS')
+2021/05/24 23:38:17	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	2938	Program	Program	映像配信を行いました。

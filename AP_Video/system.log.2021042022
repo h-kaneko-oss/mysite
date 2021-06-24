@@ -1,0 +1,2 @@
+2021/04/20 22:00:41	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3304','363-050575','DDecoder','363-050554','UIP_NULL','新宿三丁目','363-050575',to_date('2021/04/20 22:00:41','yyyy/MM/dd HH24:MI:SS')
+2021/04/20 22:00:43	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3304	Program	Program	映像配信を行いました。

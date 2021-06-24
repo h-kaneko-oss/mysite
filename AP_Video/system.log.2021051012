@@ -1,0 +1,2 @@
+2021/05/10 12:59:45	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3074','363-050633','DDecoder','363-050416','UIP_NULL','大手町一丁目交差点','363-050633',to_date('2021/05/10 12:59:45','yyyy/MM/dd HH24:MI:SS')
+2021/05/10 12:59:47	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3074	Program	Program	映像配信を行いました。

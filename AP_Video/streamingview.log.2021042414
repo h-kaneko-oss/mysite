@@ -1,0 +1,18 @@
+2021-04-24 14:00:44,831 [[ACTIVE] ExecuteThread: '50' for queue: 'weblogic.kernel.Default (self-tuning)'] INFO  - '3349','363-050552','DDecoder','363-050537','UIP_NULL','八蔵橋交差点','363-050552',to_date('2021/04/24 14:00:44','yyyy/MM/dd HH24:MI:SS') at jp.co.sei.syseng.streamingview.util.DbAccessLogger
+2021-04-24 14:00:46,581 [[ACTIVE] ExecuteThread: '50' for queue: 'weblogic.kernel.Default (self-tuning)'] INFO  - 0	Streaming View	3349	Program	Program	映像配信を行いました。 at jp.co.sei.syseng.streamingview.stb.action.StbProgramAction
+2021-04-24 14:24:07,285 [[ACTIVE] ExecuteThread: '50' for queue: 'weblogic.kernel.Default (self-tuning)'] INFO  - '3345','363-050552','DDecoder','363-050533','UIP_NULL','小松川橋西詰交差点','363-050552',to_date('2021/04/24 14:24:07','yyyy/MM/dd HH24:MI:SS') at jp.co.sei.syseng.streamingview.util.DbAccessLogger
+2021-04-24 14:24:09,036 [[ACTIVE] ExecuteThread: '50' for queue: 'weblogic.kernel.Default (self-tuning)'] INFO  - 0	Streaming View	3345	Program	Program	映像配信を行いました。 at jp.co.sei.syseng.streamingview.stb.action.StbProgramAction
+2021-04-24 14:24:31,589 [[ACTIVE] ExecuteThread: '50' for queue: 'weblogic.kernel.Default (self-tuning)'] INFO  - '3349','363-050552','DDecoder','363-050537','UIP_NULL','八蔵橋交差点','363-050552',to_date('2021/04/24 14:24:31','yyyy/MM/dd HH24:MI:SS') at jp.co.sei.syseng.streamingview.util.DbAccessLogger
+2021-04-24 14:24:33,324 [[ACTIVE] ExecuteThread: '50' for queue: 'weblogic.kernel.Default (self-tuning)'] INFO  - 0	Streaming View	3349	Program	Program	映像配信を行いました。 at jp.co.sei.syseng.streamingview.stb.action.StbProgramAction
+2021-04-24 14:29:42,801 [Timer-34] INFO  - 0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を開始しました。 at jp.co.sei.syseng.streamingview.icon.DelIconImageTask
+2021-04-24 14:29:42,832 [Timer-34] INFO  - 0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を完了しました。 at jp.co.sei.syseng.streamingview.icon.DelIconImageTask
+2021-04-24 14:29:42,926 [Timer-35] INFO  - 0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を開始しました。 at jp.co.sei.syseng.streamingview.icon.DelIconImageTask
+2021-04-24 14:29:42,973 [Timer-35] INFO  - 0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を完了しました。 at jp.co.sei.syseng.streamingview.icon.DelIconImageTask
+2021-04-24 14:29:43,051 [Timer-36] INFO  - 0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を開始しました。 at jp.co.sei.syseng.streamingview.icon.DelIconImageTask
+2021-04-24 14:29:43,082 [Timer-36] INFO  - 0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を完了しました。 at jp.co.sei.syseng.streamingview.icon.DelIconImageTask
+2021-04-24 14:29:43,176 [Timer-37] INFO  - 0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を開始しました。 at jp.co.sei.syseng.streamingview.icon.DelIconImageTask
+2021-04-24 14:29:43,207 [Timer-37] INFO  - 0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を完了しました。 at jp.co.sei.syseng.streamingview.icon.DelIconImageTask
+2021-04-24 14:29:43,301 [Timer-38] INFO  - 0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を開始しました。 at jp.co.sei.syseng.streamingview.icon.DelIconImageTask
+2021-04-24 14:29:43,332 [Timer-38] INFO  - 0	Streaming View	0	System	Icon	アイコンのイメージファイルの削除を完了しました。 at jp.co.sei.syseng.streamingview.icon.DelIconImageTask
+2021-04-24 14:46:16,329 [[ACTIVE] ExecuteThread: '50' for queue: 'weblogic.kernel.Default (self-tuning)'] INFO  - '2725','363-050303','DDecoder','363-050298','UIP_NULL','土支田交差点','363-050303',to_date('2021/04/24 14:46:16','yyyy/MM/dd HH24:MI:SS') at jp.co.sei.syseng.streamingview.util.DbAccessLogger
+2021-04-24 14:46:18,048 [[ACTIVE] ExecuteThread: '50' for queue: 'weblogic.kernel.Default (self-tuning)'] INFO  - 0	Streaming View	2725	Program	Program	映像配信を行いました。 at jp.co.sei.syseng.streamingview.stb.action.StbProgramAction

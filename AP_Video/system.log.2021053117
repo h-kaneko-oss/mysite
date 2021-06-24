@@ -1,0 +1,2 @@
+2021/05/31 17:05:05	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3066','363-050633','DDecoder','363-050414','UIP_NULL','日比谷交差点','363-050633',to_date('2021/05/31 17:05:05','yyyy/MM/dd HH24:MI:SS')
+2021/05/31 17:05:06	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3066	Program	Program	映像配信を行いました。

@@ -1,0 +1,2 @@
+2021/03/18 20:58:15	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3889','363-050632','DDecoder','363-050623','UIP_NULL','キネマ通り','363-050632',to_date('2021/03/18 20:58:15','yyyy/MM/dd HH24:MI:SS')
+2021/03/18 20:58:17	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3889	Program	Program	映像配信を行いました。

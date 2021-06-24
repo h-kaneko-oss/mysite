@@ -1,0 +1,4 @@
+2021/05/11 05:04:47	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3891','363-050632','DDecoder','363-050625','UIP_NULL','蒲田郵便局前','363-050632',to_date('2021/05/11 05:04:47','yyyy/MM/dd HH24:MI:SS')
+2021/05/11 05:04:49	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3891	Program	Program	映像配信を行いました。
+2021/05/11 05:35:48	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3310','363-050575','DDecoder','363-050561','UIP_NULL','新宿五丁目東','363-050575',to_date('2021/05/11 05:35:48','yyyy/MM/dd HH24:MI:SS')
+2021/05/11 05:35:50	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3310	Program	Program	映像配信を行いました。

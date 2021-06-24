@@ -1,0 +1,12 @@
+2021/04/25 08:26:52	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3314','363-050575','DDecoder','363-050558','UIP_NULL','新宿二丁目','363-050575',to_date('2021/04/25 08:26:52','yyyy/MM/dd HH24:MI:SS')
+2021/04/25 08:26:54	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3314	Program	Program	映像配信を行いました。
+2021/04/25 08:27:28	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3312','363-050575','DDecoder','363-050563','UIP_NULL','柳通り','363-050575',to_date('2021/04/25 08:27:28','yyyy/MM/dd HH24:MI:SS')
+2021/04/25 08:27:30	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3312	Program	Program	映像配信を行いました。
+2021/04/25 08:39:10	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'2605','363-050211','DDecoder','363-050203','UIP_NULL','上野駅東交差点','363-050211',to_date('2021/04/25 08:39:10','yyyy/MM/dd HH24:MI:SS')
+2021/04/25 08:39:12	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	2605	Program	Program	映像配信を行いました。
+2021/04/25 08:40:08	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'2612','363-050211','DDecoder','363-050210','UIP_NULL','上野広小路交差点','363-050211',to_date('2021/04/25 08:40:08','yyyy/MM/dd HH24:MI:SS')
+2021/04/25 08:40:10	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	2612	Program	Program	映像配信を行いました。
+2021/04/25 08:40:46	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'2606','363-050211','DDecoder','363-050204','UIP_NULL','上野駅前交差点','363-050211',to_date('2021/04/25 08:40:46','yyyy/MM/dd HH24:MI:SS')
+2021/04/25 08:40:47	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	2606	Program	Program	映像配信を行いました。
+2021/04/25 08:49:55	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3206','363-050514','DDecoder','363-050508','UIP_NULL','四面道西','363-050514',to_date('2021/04/25 08:49:55','yyyy/MM/dd HH24:MI:SS')
+2021/04/25 08:49:56	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3206	Program	Program	映像配信を行いました。

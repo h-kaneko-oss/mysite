@@ -1,0 +1,2 @@
+2021/04/09 15:20:41	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3309','363-050575','DDecoder','363-050560','UIP_NULL','信濃町駅前','363-050575',to_date('2021/04/09 15:20:41','yyyy/MM/dd HH24:MI:SS')
+2021/04/09 15:20:43	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3309	Program	Program	映像配信を行いました。

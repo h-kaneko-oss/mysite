@@ -1,0 +1,2 @@
+2021/04/19 02:32:40	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3350','363-050552','DDecoder','363-050538','UIP_NULL','一之江ランプ交差点','363-050552',to_date('2021/04/19 02:32:40','yyyy/MM/dd HH24:MI:SS')
+2021/04/19 02:32:41	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3350	Program	Program	映像配信を行いました。

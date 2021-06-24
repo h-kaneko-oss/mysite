@@ -1,0 +1,2 @@
+2021-06-07 09:08:59,831 [[ACTIVE] ExecuteThread: '47' for queue: 'weblogic.kernel.Default (self-tuning)'] INFO  - '4410','363-050404','DDecoder','363-050649','UIP_NULL','’†‰›–h”g’ç“üŒû','363-050404',to_date('2021/06/07 09:08:59','yyyy/MM/dd HH24:MI:SS') at jp.co.sei.syseng.streamingview.util.DbAccessLogger
+2021-06-07 09:09:01,738 [[ACTIVE] ExecuteThread: '47' for queue: 'weblogic.kernel.Default (self-tuning)'] INFO  - 0	Streaming View	4410	Program	Program	‰f‘œ”zM‚ğs‚¢‚Ü‚µ‚½B at jp.co.sei.syseng.streamingview.stb.action.StbProgramAction

@@ -1,0 +1,12 @@
+2021/03/30 08:14:32	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'2618','363-050233','DDecoder','363-050226','UIP_NULL','表参道交差点','363-050233',to_date('2021/03/30 08:14:32','yyyy/MM/dd HH24:MI:SS')
+2021/03/30 08:14:34	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	2618	Program	Program	映像配信を行いました。
+2021/03/30 08:17:58	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3349','363-050552','DDecoder','363-050537','UIP_NULL','八蔵橋交差点','363-050552',to_date('2021/03/30 08:17:58','yyyy/MM/dd HH24:MI:SS')
+2021/03/30 08:17:59	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3349	Program	Program	映像配信を行いました。
+2021/03/30 08:18:11	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3076','363-050633','DDecoder','363-050418','UIP_NULL','東京国際フォーラム西交差点','363-050633',to_date('2021/03/30 08:18:11','yyyy/MM/dd HH24:MI:SS')
+2021/03/30 08:18:13	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3076	Program	Program	映像配信を行いました。
+2021/03/30 08:19:15	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3075','363-050633','DDecoder','363-050417','UIP_NULL','新国際ビル前交差点','363-050633',to_date('2021/03/30 08:19:15','yyyy/MM/dd HH24:MI:SS')
+2021/03/30 08:19:17	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3075	Program	Program	映像配信を行いました。
+2021/03/30 08:36:36	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3309','363-050575','DDecoder','363-050560','UIP_NULL','信濃町駅前','363-050575',to_date('2021/03/30 08:36:36','yyyy/MM/dd HH24:MI:SS')
+2021/03/30 08:36:37	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3309	Program	Program	映像配信を行いました。
+2021/03/30 08:54:33	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3214','363-050514','DDecoder','363-050512','UIP_NULL','井荻トンネル南換気所','363-050514',to_date('2021/03/30 08:54:33','yyyy/MM/dd HH24:MI:SS')
+2021/03/30 08:54:34	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3214	Program	Program	映像配信を行いました。

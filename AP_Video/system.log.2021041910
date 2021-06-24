@@ -1,0 +1,2 @@
+2021/04/19 10:00:09	INFO	jp.co.sei.syseng.streamingview.util.DbAccessLogger	'3887','363-050632','DDecoder','363-050621','UIP_NULL','南蒲田','363-050632',to_date('2021/04/19 10:00:09','yyyy/MM/dd HH24:MI:SS')
+2021/04/19 10:00:11	INFO	jp.co.sei.syseng.streamingview.stb.action.StbProgramAction	0	Streaming View	3887	Program	Program	映像配信を行いました。

@@ -1,0 +1,2 @@
+2021-04-27 00:57:46,661 [[ACTIVE] ExecuteThread: '45' for queue: 'weblogic.kernel.Default (self-tuning)'] INFO  - '2951','363-050404','DDecoder','363-050382','UIP_NULL','シーリア前','363-050404',to_date('2021/04/27 00:57:46','yyyy/MM/dd HH24:MI:SS') at jp.co.sei.syseng.streamingview.util.DbAccessLogger
+2021-04-27 00:57:48,411 [[ACTIVE] ExecuteThread: '45' for queue: 'weblogic.kernel.Default (self-tuning)'] INFO  - 0	Streaming View	2951	Program	Program	映像配信を行いました。 at jp.co.sei.syseng.streamingview.stb.action.StbProgramAction
