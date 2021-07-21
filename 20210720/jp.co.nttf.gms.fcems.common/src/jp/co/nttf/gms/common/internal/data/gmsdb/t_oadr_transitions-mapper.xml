@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC
+  "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jp.co.nttf.gms.common.internal.data.gmsdb.TOadrTransitionsMapper">
+  <!-- テーブル名 -->
+  <sql id="tableName">t_oadr_transitions</sql>
+  <!-- 全カラム名 -->
+  <sql id="allColumns">
+    scheduleid, targettime, plannedvalue, achievement
+  </sql>
+  <!-- 取得クエリ -->
+  <select id="select" parameterType="TOadrTransitions" resultType="TOadrTransitions">
+    SELECT <include refid="allColumns"/>
+    FROM <include refid="tableName"/>
+    <where>
+      <if test="scheduleid != null">scheduleid = #{scheduleid}</if>
+      <if test="targettime != null">AND targettime = #{targettime}</if>
+    </where>
+  </select>
+  <!-- 取得クエリ -->
+  <select id="selectNearness" parameterType="TOadrTransitions" resultType="TOadrTransitions">
+    SELECT <include refid="allColumns"/>
+    FROM <include refid="tableName"/>
+    <where>
+      <if test="scheduleid != null">scheduleid = #{scheduleid}</if>
+      <if test="targettime != null">
+      <![CDATA[
+        AND targettime <= #{targettime}
+      ]]>
+      </if>
+      AND plannedvalue IS NOT NULL
+    </where>
+    ORDER BY targettime DESC
+    LIMIT 1
+  </select>
+  <!-- 挿入クエリ -->
+  <insert id="insert" parameterType="TOadrTransitions">
+    INSERT INTO <include refid="tableName"/>
+    (scheduleid, targettime
+    <if test="plannedvalue != null">, plannedvalue</if>
+    <if test="achievement != null">, achievement</if>
+    )
+    values (
+      #{scheduleid}, #{targettime}
+      <if test="plannedvalue != null">, #{plannedvalue}</if>
+      <if test="achievement != null">, #{achievement}</if>
+    )
+  </insert>
+  <!-- 更新クエリ -->
+  <update id="update" parameterType="TOadrTransitions">
+    UPDATE <include refid="tableName"/>
+    <set>
+      <if test="targettime != null">targettime = #{targettime},</if>
+      <if test="plannedvalue != null">plannedvalue = #{plannedvalue},</if>
+      <if test="achievement != null">achievement = #{achievement},</if>
+    </set>
+    <where>
+      <if test="scheduleid != null">scheduleid = #{scheduleid}</if>
+      <if test="targettime != null">AND targettime = #{targettime}</if>
+    </where>
+  </update>
+</mapper>

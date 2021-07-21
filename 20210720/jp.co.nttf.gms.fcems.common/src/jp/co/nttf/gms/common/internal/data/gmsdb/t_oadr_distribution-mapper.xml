@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC
+  "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jp.co.nttf.gms.common.internal.data.gmsdb.TOadrDistributionMapper">
+  <!-- テーブル名 -->
+  <sql id="tableName">t_oadr_distribution</sql>
+  <!-- 全カラム名 -->
+  <sql id="allColumns">
+    scheduleid, userid, requestid, requesttime, status, modificationnum, baseline, priority, instruction
+  </sql>
+  <!-- 取得クエリ -->
+  <select id="select" parameterType="TOadrDistribution" resultType="TOadrDistribution">
+    SELECT <include refid="allColumns"/>
+    FROM <include refid="tableName"/>
+    <where>
+      <if test="scheduleid != null">scheduleid = #{scheduleid}</if>
+      <if test="userid != null">AND userid = #{userid}</if>
+    </where>
+  </select>
+  <!-- 配信用GMU取得クエリ -->
+  <select id="selectDistributionGmu" resultType="String">
+    SELECT g2r.userid FROM m_gmu2resourceid g2r
+    WHERE g2r.resourceid = #{resourceid}
+    AND g2r.userid IN
+    <foreach item="item" collection="gmuSet" open="(" separator="," close=")">
+      #{item}
+    </foreach>
+  </select>
+  <!-- 未登録レコード挿入クエリ -->
+  <insert id="insertUnregistered" parameterType="TOadrSchedule">
+    INSERT INTO <include refid="tableName"/> (scheduleid, userid)
+    SELECT #{scheduleid}, g2r.userid FROM m_gmu2resourceid g2r
+    WHERE g2r.resourceid = #{resourceid}
+    AND g2r.userid NOT IN (SELECT userid FROM <include refid="tableName"/> WHERE scheduleid=#{scheduleid})
+  </insert>
+  <!-- 算出用GMU挿入クエリ -->
+  <insert id="insertMeasurementGmu" parameterType="TOadrDistribution">
+    INSERT INTO <include refid="tableName"/> (scheduleid, userid, status)
+    SELECT #{scheduleid}, #{userid}, 2
+    WHERE NOT EXISTS (SELECT 1 FROM <include refid="tableName"/> WHERE scheduleid=#{scheduleid} AND userid=#{userid})
+  </insert>
+  <!-- 更新クエリ -->
+  <update id="update" parameterType="TOadrDistribution">
+    UPDATE <include refid="tableName"/>
+    <set>
+      <if test="requestid != null">requestid = #{requestid},</if>
+      <if test="requesttime != null">requesttime = #{requesttime},</if>
+      <if test="status != null">status = #{status},</if>
+      <if test="baseline != null">baseline = #{baseline},</if>
+    </set>
+    WHERE scheduleid = #{scheduleid}
+      AND userid = #{userid}
+  </update>
+  <!-- 更新クエリ -->
+  <update id="saveInstructions" parameterType="TOadrDistribution">
+    UPDATE <include refid="tableName"/>
+    <set>
+      <if test="status != null">status = #{status},</if>
+      <if test="priority != null">priority = #{priority},</if>
+      <if test="instruction != null">instruction = #{instruction}</if>
+    </set>
+    <![CDATA[
+    WHERE userid = #{userid}
+    AND scheduleid IN (
+      SELECT scheduleid
+      FROM t_oadr_schedule
+      WHERE (
+       scheduleid = #{scheduleid}
+       OR parentid = #{scheduleid}
+      )
+      AND starttime >= #{starttime}
+      AND modeno > 0
+    )
+    ]]>
+  </update>
+  <!-- 指示値更新クエリ -->
+  <update id="copyInstructions" parameterType="TOadrSchedule">
+    UPDATE <include refid="tableName"/> AS dst
+    SET instruction = prev.instruction
+    FROM (
+      SELECT userid, instruction
+      FROM <include refid="tableName"/>
+      WHERE scheduleid = (
+        SELECT scheduleid FROM t_oadr_schedule
+        WHERE status = 0
+        AND modeno > 0
+        AND (scheduleid = #{parentid} OR parentid = #{parentid})
+        <![CDATA[
+        AND starttime < #{starttime}
+        ]]>
+        ORDER BY starttime DESC LIMIT 1
+      )
+      AND instruction IS NOT NULL
+    ) AS prev
+    WHERE scheduleid = #{scheduleid}
+    AND dst.userid = prev.userid
+  </update>
+</mapper>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC
+  "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jp.co.nttf.gms.common.internal.data.gmsdb.TPropertyMapper">
+  <!-- テーブル名 -->
+  <sql id="tableName">t_property</sql>
+  <!-- 全カラム名 -->
+  <sql id="allColumns">
+    key, value
+  </sql>
+  <!-- 全レコード取得クエリ -->
+  <select id="selectAll" resultType="KeyValueInfo">
+    SELECT <include refid="allColumns"/>
+    FROM <include refid="tableName"/>
+  </select>
+</mapper>

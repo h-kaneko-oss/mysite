@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC
+  "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jp.co.nttf.gms.common.internal.data.gmsdb.TMeasurevalueMapper">
+  <!-- テーブル名 -->
+  <sql id="tableName">t_measurevalue</sql>
+  <!-- 全カラム名 -->
+  <sql id="allColumns">
+    measurepointid, measuretime, ch
+  </sql>
+  <resultMap id="measurevalueMap" type="TMeasurevalue">
+    <id property="measurepointid" column="measurepointid" />
+    <result property="measuretime" column="measuretime" />
+    <result property="ch" column="ch" jdbcType="ARRAY" typeHandler="org.apache.ibatis.type.ArrayTypeHandler" javaType="String"/>
+  </resultMap>
+  <!-- 電力取得クエリ -->
+  <select id="selectPower" parameterType="TMeasurevalue" resultType="Double">
+    SELECT to_number(ch[power.idx], '9999999999.999999') / 1000 AS num
+    FROM (SELECT tec.wiringid,
+      case
+       when tec.wiringid = 0 then 29
+       when tec.wiringid = 1 then 23
+       when tec.wiringid = 2 then 23
+       when tec.wiringid = 3 then 9
+       else 99
+      end AS idx
+      FROM t_measurepoint AS tmp
+      LEFT OUTER JOIN t_e_component AS tec ON tmp.ecomponentid = tec.ecomponentid
+      WHERE measurepointid = #{measurepointid}
+      ) AS power,
+    <include refid="tableName"/> AS tmv
+    <![CDATA[
+    WHERE tmv.measurepointid = #{measurepointid}
+    AND tmv.measuretime >= #{measuretimeStart}
+    AND tmv.measuretime < #{measuretimeStart}::timestamp + '1 minutes'
+    AND tmv.ch[power.idx] <> ''
+    ORDER BY tmv.measuretime DESC
+    LIMIT 1
+    ]]>
+  </select>
+  <!-- 電力量取得クエリ -->
+  <select id="selectEnergy" parameterType="TMeasurevalue" resultType="Map">
+    SELECT to_number(ch[cnf.vidx], '9999999999.999999')::double precision AS energy,
+      case
+        when ch[cnf.midx] = '' then 1::double precision
+        else to_number(ch[cnf.midx], '9999999999.999999')::double precision
+      end AS multipy,
+      cnf.maxmultiplicationvalue AS max
+    FROM (SELECT tmpn.maxmultiplicationvalue, tec.wiringid,
+      case
+       when tec.wiringid = 0 then 35
+       when tec.wiringid = 1 then 29
+       when tec.wiringid = 2 then 29
+       when tec.wiringid = 3 then 15
+       else 99
+      end AS vidx,
+      case
+       when tec.wiringid = 0 then 47
+       when tec.wiringid = 1 then 41
+       when tec.wiringid = 2 then 41
+       when tec.wiringid = 3 then 27
+       else 99
+      end AS midx
+      FROM t_measurepoint AS tmp
+        LEFT OUTER JOIN t_e_component AS tec ON tmp.ecomponentid = tec.ecomponentid
+        LEFT OUTER JOIN t_meainstpartnum AS tmpn ON tec.meainstmakerid = tmpn.meainstmakerid
+          AND tec.meainstpartnumid = tmpn.meainstpartnumid
+      WHERE measurepointid = #{measurepointid}) AS cnf,
+    <include refid="tableName"/> AS tmv
+    <![CDATA[
+    WHERE tmv.measurepointid = #{measurepointid}
+    AND tmv.measuretime >= #{measuretimeStart}
+    AND tmv.measuretime < #{measuretimeEnd}
+    AND tmv.ch[cnf.vidx] <> ''
+    ORDER BY tmv.measuretime DESC
+    LIMIT 1
+    ]]>
+  </select>
+  <!-- measurevalue取得クエリ -->
+  <select id="findByGmuIdAndPeriod" resultType="TMeasurevalue">
+    SELECT measurepointid, measuretime, ch[${vidx}] as electric, ch[${midx}] as multi
+    FROM t_measurevalue
+    WHERE measurepointid = #{measurepointId}
+    <![CDATA[
+    AND measuretime >= #{from}::timestamp + '-${margin} seconds'
+    AND measuretime <= #{to}::timestamp + '${margin} seconds'
+    ORDER BY measurepointid, measuretime
+    ]]>
+  </select>
+  <!-- 電力量用channel（電力量、乗率）index取得クエリ  -->
+  <select id="findEChannelIndexByGmuId" resultType="ChannelInfo">
+    SELECT tmp.measurepointid, tec.wiringid, tmpn.maxmultiplicationvalue
+    FROM t_measurepoint AS tmp
+      LEFT JOIN t_e_component AS tec ON tmp.ecomponentid = tec.ecomponentid
+      LEFT JOIN t_meainstpartnum AS tmpn ON tec.meainstmakerid = tmpn.meainstmakerid
+        AND tec.meainstpartnumid = tmpn.meainstpartnumid
+    WHERE tmp.measurepointid IN
+    <foreach item="item" collection="idList" open="(" separator="," close=")">
+        #{item}
+    </foreach>
+    AND tec.userid = #{gmuid}
+  </select>
+  <!-- 最終計測日時取得クエリ  -->
+  <select id="selectLastMeasuretime" resultType="Date">
+    SELECT mvl.measuretime FROM t_measurevalue_last AS mvl
+    WHERE mvl.measurepointid IN (SELECT measurepointid FROM m_gmu2measurepoint WHERE userid = #{gmuId})
+    ORDER BY mvl.measuretime DESC
+    LIMIT 1
+  </select>
+</mapper>

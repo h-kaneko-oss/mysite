@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC
+  "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jp.co.nttf.gms.common.internal.data.gmsdb.TExtractvalueMapper">
+  <!-- テーブル名 -->
+  <sql id="tableName">t_extractvalue</sql>
+  <!-- 全カラム名 -->
+  <sql id="allColumns">
+    measurepointid, measuretime, measurevalue, totalflag, numofavrg
+  </sql>
+  <!-- 需要予測値取得クエリ -->
+  <select id="selectCustomerPrediction" parameterType="TExtractvalue" resultType="TExtractvalue">
+    SELECT mtime AS measuretime, exa.measurevalue
+    FROM generate_series(
+      #{measuretime},
+      #{measuretime}::timestamp + '1 days' + '-1 minute',
+      '30 minute') AS mtime
+    LEFT OUTER JOIN (
+      SELECT measurepointid, measuretime, measurevalue
+      FROM <include refid="tableName"/>
+      WHERE measurepointid = #{measurepointid}
+      AND totalflag = 3 ) AS exa
+    ON mtime = exa.measuretime
+    ORDER BY mtime
+  </select>
+  <!-- 発電予測値取得クエリ -->
+  <select id="selectGeneratorPrediction" parameterType="TExtractvalue" resultType="TExtractvalue">
+    SELECT mtime AS measuretime, exa.measurevalue / 2 AS measurevalue, exb.measurevalue / 2 AS optionalvalue
+    FROM generate_series(
+      #{measuretime},
+      #{measuretime}::timestamp + '1 days' + '-1 minute',
+      '30 minute') AS mtime
+    LEFT OUTER JOIN (
+      SELECT measurepointid, measuretime, measurevalue
+      FROM <include refid="tableName"/>
+      WHERE measurepointid = #{measurepointid}
+      AND totalflag = 5 ) AS exa
+    ON mtime = exa.measuretime
+    LEFT OUTER JOIN (
+      SELECT measurepointid, measuretime, measurevalue
+      FROM <include refid="tableName"/>
+      WHERE measurepointid = #{measurepointid}
+      AND totalflag = 4 ) AS exb
+    ON mtime = exb.measuretime
+    ORDER BY mtime
+  </select>
+  <!-- 需要予測値取得クエリ -->
+  <select id="selectPrediction" parameterType="TExtractvalue" resultType="TExtractvalue">
+    SELECT measuretime, SUM(measurevalue) AS measurevalue
+    FROM <include refid="tableName"/>
+    WHERE measurepointid IN (
+      SELECT measurepointid
+      FROM m_gmu2measurepoint
+      WHERE userid IN
+      <foreach item="item" collection="gmuList" open="(" separator="," close=")">
+        #{item}
+      </foreach>
+      AND measurepointid IN
+      <foreach item="item" collection="mpList" open="(" separator="," close=")">
+        #{item}
+      </foreach>
+      )
+    <![CDATA[
+    AND measuretime >= #{param.measuretime}
+    AND measuretime <= #{param.measuretimeEnd}
+    ]]>
+    AND totalflag = 3
+    GROUP BY measuretime
+  </select>
+  <!-- 最新値取得クエリ -->
+  <select id="selectLatest" parameterType="TExtractvalue" resultType="TExtractvalue">
+    SELECT <include refid="allColumns"/>
+    FROM <include refid="tableName"/>
+    <where>
+      <if test="measurepointid != null">measurepointid = #{measurepointid}</if>
+      <if test="measuretime != null">
+      <![CDATA[
+        AND measuretime >= #{measuretime}
+      ]]>
+      </if>
+      <if test="totalflag != null">AND totalflag = #{totalflag}</if>
+    </where>
+    ORDER BY measuretime DESC
+    LIMIT 1
+  </select>
+  <!-- 指定範囲時間のデータ取得クエリ -->
+  <select id="getRangeData" resultType="TExtractvalue">
+    SELECT <include refid="allColumns"/>
+    FROM <include refid="tableName"/>
+    WHERE
+      measurepointid = #{measurepointid}
+      <![CDATA[
+        AND measuretime >= #{startDate}
+        AND measuretime <= #{endDate}
+      ]]>
+      AND totalflag = #{totalflag}
+    ORDER BY measuretime
+  </select>
+</mapper>

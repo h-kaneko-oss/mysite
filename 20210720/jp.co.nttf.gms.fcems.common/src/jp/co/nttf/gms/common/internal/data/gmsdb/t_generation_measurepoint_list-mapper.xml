@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC
+  "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jp.co.nttf.gms.common.internal.data.gmsdb.TGenerationMeasurepointListMapper">
+  <!-- テーブル名 -->
+  <sql id="tableName">t_generation_measurepoint_list</sql>
+  <!-- 全カラム名 -->
+  <sql id="allColumns">
+    generation_measurepoint_list_id, generation_measurepoint_id
+  </sql>
+  <resultMap id="generationmeasurepointlistMap" type="TGenerationMeasurepointList">
+    <result property="generation_measurepoint_id" column="generation_measurepoint_id" typeHandler="org.apache.ibatis.type.ArrayTypeHandler" javaType="Integer[]" jdbcType="ARRAY" />
+  </resultMap>
+  <!-- 全件取得クエリ -->
+  <select id="selectAll" resultType="TGenerationMeasurepointList">
+    SELECT <include refid="allColumns"/>
+    FROM <include refid="tableName"/>
+  </select>
+  <!-- リストIDで取得クエリ -->
+  <select id="selectByListId" resultType="TGenerationMeasurepointList" resultMap="generationmeasurepointlistMap">
+    SELECT <include refid="allColumns"/>
+    FROM <include refid="tableName"/>
+    WHERE generation_measurepoint_list_id = #{generationMeasurepointListId}
+  </select>
+</mapper>

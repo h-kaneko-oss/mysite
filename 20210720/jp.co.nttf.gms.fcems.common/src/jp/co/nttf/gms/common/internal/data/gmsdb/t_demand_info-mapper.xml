@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC
+  "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jp.co.nttf.gms.common.internal.data.gmsdb.TDemandInfoMapper">
+  <!-- テーブル名 -->
+  <sql id="tableName">t_demand_info</sql>
+  <!-- 全カラム名 -->
+  <sql id="allColumns">
+    drid, drgroupid, starttime, endtime, statusflag, note, registdate, registuser, drcsv
+  </sql>
+  <!-- 既存レコード無効クエリ -->
+  <update id="disableAll" parameterType="TDemandInfo">
+    UPDATE <include refid="tableName"/>
+    SET
+      statusflag = #{statusflag}
+    <![CDATA[
+    WHERE drgroupid = #{drgroupid}
+      AND starttime >= #{starttime}
+      AND starttime < #{endtime}
+      AND statusflag = 0
+    ]]>
+  </update>
+  <!-- 挿入クエリ -->
+  <insert id="insert" parameterType="TDemandInfo" useGeneratedKeys="true" keyProperty="drid">
+    INSERT INTO <include refid="tableName"/>
+    (drgroupid, starttime, endtime, statusflag, note, registdate, registuser, drcsv)
+    values (
+      #{drgroupid}, #{starttime}, #{endtime}, #{statusflag}, #{note}, CURRENT_TIMESTAMP, #{registuser}, #{drcsv}
+    )
+  </insert>
+</mapper>

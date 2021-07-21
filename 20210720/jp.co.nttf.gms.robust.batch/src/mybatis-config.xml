@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE configuration PUBLIC
+  "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+  <typeAliases>
+    <typeAlias type="jp.co.nttf.gms.common.internal.data.ChannelInfo" alias="ChannelInfo" />
+    <typeAlias type="jp.co.nttf.gms.common.internal.data.KeyValueInfo" alias="KeyValueInfo" />
+    <typeAlias type="jp.co.nttf.gms.common.internal.data.ControlInfo" alias="ControlInfo" />
+    <typeAlias type="jp.co.nttf.gms.common.internal.data.gmsdb.TExtractvalue" alias="TExtractvalue" />
+    <typeAlias type="jp.co.nttf.gms.common.internal.data.gmsdb.TMaintenanceSchedule" alias="TMaintenanceSchedule" />
+    <typeAlias type="jp.co.nttf.gms.common.internal.data.gmsdb.TMeasurevalue" alias="TMeasurevalue" />
+    <typeAlias type="jp.co.nttf.gms.common.internal.data.gmsdb.TOadrCapacity" alias="TOadrCapacity" />
+    <typeAlias type="jp.co.nttf.gms.common.internal.data.gmsdb.TOadrDistribution" alias="TOadrDistribution" />
+    <typeAlias type="jp.co.nttf.gms.common.internal.data.gmsdb.TOadrSchedule" alias="TOadrSchedule" />
+    <typeAlias type="jp.co.nttf.gms.common.internal.data.gmsdb.TOadrTransitions" alias="TOadrTransitions" />
+    <typeAlias type="jp.co.nttf.gms.common.internal.data.gmsdb.TStatusnoticePoint" alias="TStatusnoticePoint" />
+    <typeAlias type="jp.co.nttf.gms.common.internal.data.gmsdb.TMaintenanceDistribution" alias="TMaintenanceDistribution" />
+    <typeAlias type="jp.co.nttf.gms.common.internal.data.gmsdb.TMaintenanceDeviceConfig" alias="TMaintenanceDeviceConfig" />
+    <typeAlias type="jp.co.nttf.gms.common.internal.data.gmsdb.TPowerstation" alias="TPowerstation" />
+    <typeAlias type="jp.co.nttf.gms.common.internal.data.gmsdb.TGmu" alias="TGmu" />
+    <typeAlias type="jp.co.nttf.gms.common.internal.data.gmsdb.TMaintenanceTemplate" alias="TMaintenanceTemplate" />
+    <typeAlias type="jp.co.nttf.gms.common.internal.data.gmsdb.MGmu2powerstation" alias="MGmu2powerstation" />
+    <typeAlias type="jp.co.nttf.gms.common.internal.data.gmsdb.MGmu2mail" alias="MGmu2mail" />
+    <typeAlias type="jp.co.nttf.gms.common.internal.data.gmsdb.TWeatherLocation" alias="TWeatherLocation" />
+    <typeAlias type="jp.co.nttf.gms.common.internal.data.gmsdb.TWeatherForecastG" alias="TWeatherForecastG" />
+    <typeAlias type="jp.co.nttf.gms.common.internal.data.gmsdb.TWeatherForecastP" alias="TWeatherForecastP" />
+    <typeAlias type="jp.co.nttf.gms.common.internal.data.gmsdb.TDemandGenerationLocation" alias="TDemandGenerationLocation" />
+    <typeAlias type="jp.co.nttf.gms.common.internal.data.gmsdb.TDemandMeasurepointList" alias="TDemandMeasurepointList" />
+    <typeAlias type="jp.co.nttf.gms.common.internal.data.gmsdb.TGenerationMeasurepointList" alias="TGenerationMeasurepointList" />
+    <typeAlias type="jp.co.nttf.gms.common.internal.data.gmsdb.TDemandForecast" alias="TDemandForecast" />
+    <typeAlias type="jp.co.nttf.gms.common.internal.data.gmsdb.TGenerationForecast" alias="TGenerationForecast" />
+  </typeAliases>
+  <environments default="gmsdb">
+    <!-- GMS-DBの環境設定 -->
+    <environment id="gmsdb">
+      <transactionManager type="JDBC" />
+      <!--
+      <dataSource type="JNDI">
+        <property name="data_source" value="java:comp/env/jdbc/postgres"/>
+      </dataSource>
+      -->
+      <dataSource type="POOLED">
+        <property name="driver" value="org.postgresql.Driver" />
+        <property name="url" value="jdbc:postgresql://192.168.56.106:5432/gmsdb2" />
+        <property name="username" value="postgres" />
+        <property name="password" value="postgres00" />
+        <property name="poolMaximumActiveConnections" value="2" />
+        <property name="poolMaximumIdleConnections" value="1" />
+        <property name="poolPingQuery" value="SELECT 1" />
+        <property name="poolPingEnabled" value="true" />
+        <property name="poolPingConnectionsNotUsedFor" value="20" />
+      </dataSource>
+    </environment>
+  </environments>
+  <mappers>
+    <!-- GMS-DBのMapperファイル -->
+    <mapper resource="jp/co/nttf/gms/common/internal/data/gmsdb/m_gmu2resourceid-mapper.xml" />
+    <mapper resource="jp/co/nttf/gms/common/internal/data/gmsdb/t_extractvalue-mapper.xml" />
+    <mapper resource="jp/co/nttf/gms/common/internal/data/gmsdb/t_gmu-mapper.xml" />
+    <mapper resource="jp/co/nttf/gms/common/internal/data/gmsdb/t_maintenance_schedule-mapper.xml" />
+    <mapper resource="jp/co/nttf/gms/common/internal/data/gmsdb/t_measurevalue-mapper.xml" />
+    <mapper resource="jp/co/nttf/gms/common/internal/data/gmsdb/t_oadr_capacity-mapper.xml" />
+    <mapper resource="jp/co/nttf/gms/common/internal/data/gmsdb/t_oadr_distribution-mapper.xml" />
+    <mapper resource="jp/co/nttf/gms/common/internal/data/gmsdb/t_oadr_schedule-mapper.xml" />
+    <mapper resource="jp/co/nttf/gms/common/internal/data/gmsdb/t_oadr_transitions-mapper.xml" />
+    <mapper resource="jp/co/nttf/gms/common/internal/data/gmsdb/t_property-mapper.xml" />
+    <mapper resource="jp/co/nttf/gms/common/internal/data/gmsdb/t_statusnotice_point-mapper.xml" />
+    <mapper resource="jp/co/nttf/gms/common/internal/data/gmsdb/t_maintenance_distribution-mapper.xml" />
+    <mapper resource="jp/co/nttf/gms/common/internal/data/gmsdb/t_maintenance_device_config-mapper.xml" />
+    <mapper resource="jp/co/nttf/gms/common/internal/data/gmsdb/t_powerstation-mapper.xml" />
+    <mapper resource="jp/co/nttf/gms/common/internal/data/gmsdb/m_gmu2powerstation-mapper.xml" />
+    <mapper resource="jp/co/nttf/gms/common/internal/data/gmsdb/t_maintenance_template-mapper.xml" />
+    <mapper resource="jp/co/nttf/gms/common/internal/data/gmsdb/m_gmu2mail-mapper.xml" />
+    <mapper resource="jp/co/nttf/gms/common/internal/data/gmsdb/t_weather_location-mapper.xml" />
+    <mapper resource="jp/co/nttf/gms/common/internal/data/gmsdb/t_weather_forecast_g-mapper.xml" />
+    <mapper resource="jp/co/nttf/gms/common/internal/data/gmsdb/t_weather_forecast_p-mapper.xml" />
+    <mapper resource="jp/co/nttf/gms/common/internal/data/gmsdb/t_demand_generation_location-mapper.xml" />
+    <mapper resource="jp/co/nttf/gms/common/internal/data/gmsdb/t_demand_measurepoint_list-mapper.xml" />
+    <mapper resource="jp/co/nttf/gms/common/internal/data/gmsdb/t_generation_measurepoint_list-mapper.xml" />
+    <mapper resource="jp/co/nttf/gms/common/internal/data/gmsdb/t_demand_forecast-mapper.xml" />
+    <mapper resource="jp/co/nttf/gms/common/internal/data/gmsdb/t_generation_forecast-mapper.xml" />
+  </mappers>
+</configuration>

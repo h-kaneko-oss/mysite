@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC
+  "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jp.co.nttf.gms.common.internal.data.gmsdb.TSimulationIntermediateMapper">
+  <!-- テーブル名 -->
+  <sql id="tableName">t_simulation_intermediate</sql>
+  <!-- 全カラム名 -->
+  <sql id="allColumns">
+    d_g_location_id, simulation_time, time_series_index, soc, w_u, w_b, s_over, lf_acdc, lf_dcdc
+  </sql>
+  <!-- 挿入クエリ -->
+  <insert id="insert" parameterType="TSimulationIntermediate">
+    INSERT INTO <include refid="tableName"/>
+    (d_g_location_id, simulation_time, time_series_index, soc, w_u, w_b, s_over, lf_acdc, lf_dcdc)
+    values (
+      #{d_g_location_id}, #{simulation_time}, #{time_series_index}, #{soc}, #{w_u}, #{w_b}, #{s_over}, #{lf_acdc}, #{lf_dcdc}
+    )
+  </insert>
+  <!-- 全件取得クエリ -->
+  <select id="selectAll" resultType="TSimulationIntermediate">
+    SELECT <include refid="allColumns"/>
+    FROM <include refid="tableName"/>
+  </select>
+</mapper>

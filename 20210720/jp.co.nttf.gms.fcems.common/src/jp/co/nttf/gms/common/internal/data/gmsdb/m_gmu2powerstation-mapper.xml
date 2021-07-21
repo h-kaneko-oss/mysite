@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC
+  "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jp.co.nttf.gms.common.internal.data.gmsdb.MGmu2powerstationMapper">
+  <!-- テーブル名 -->
+  <sql id="tableName">m_gmu2powerstation</sql>
+  <!-- 全カラム名 -->
+  <sql id="allColumns">
+    gmuid, powerstationid, controltime
+  </sql>
+  <!-- 発電所IDに紐付くGMU-発電所取得 -->
+  <select id="getGmu2PowerstationListByPowerId" resultType="MGmu2powerstation">
+    SELECT <include refid="allColumns"/>
+    FROM <include refid="tableName"/>
+    WHERE
+      powerstationid = #{powerstationid}
+    ORDER BY
+      gmuid ASC
+  </select>
+</mapper>

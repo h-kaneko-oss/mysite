@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC
+  "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jp.co.nttf.gms.common.internal.data.gmsdb.MGmu2resourceidMapper">
+  <!-- テーブル名 -->
+  <sql id="tableName">m_gmu2resourceid</sql>
+  <!-- 全カラム名 -->
+  <sql id="allColumns">
+    userid, resourceid
+  </sql>
+  <!-- 取得クエリ -->
+  <select id="selectByMeasurepoint" parameterType="Integer" resultType="String">
+    SELECT resourceid
+    FROM m_gmu2measurepoint mgm, <include refid="tableName"/> mgr
+    WHERE mgm.measurepointid = #{measurepointId}
+    AND mgm.userid = mgr.userid;
+  </select>
+  <!-- 取得クエリ -->
+  <select id="selectGmuId" parameterType="String" resultType="String">
+    SELECT userid
+    FROM <include refid="tableName"/>
+    WHERE resourceid = #{resourceid}
+  </select>
+</mapper>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC
+  "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jp.co.nttf.gms.common.internal.data.gmsdb.TMaintenanceDeviceConfigMapper">
+  <!-- テーブル名 -->
+  <sql id="tableName">t_maintenance_device_config</sql>
+  <!-- 全カラム名 -->
+  <sql id="allColumns">
+    configid, scheduleid, devicename, distributionid, property
+  </sql>
+  <!-- メンテナンスデバイス設定を登録する -->
+  <insert id="insertDeviceConfig" parameterType="TMaintenanceDeviceConfig">
+    INSERT INTO <include refid="tableName"/>
+    (scheduleid, devicename, distributionid, property) VALUES
+    (
+      #{scheduleid},
+      #{devicename},
+      #{distributionid},
+      #{property}
+    )
+  </insert>
+</mapper>
