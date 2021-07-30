@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC
+  "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jp.co.nttf.gms.common.internal.data.gmsdb.TOadrCapacityMapper">
+  <!-- テーブル名 -->
+  <sql id="tableName">t_oadr_capacity</sql>
+  <!-- 全カラム名 -->
+  <sql id="allColumns">
+    resourceid, targetmonth, capacity
+  </sql>
+  <!-- 1件取得クエリ -->
+  <select id="selectOne" parameterType="TOadrCapacity" resultType="TOadrCapacity">
+    SELECT <include refid="allColumns"/>
+    FROM <include refid="tableName"/>
+    <where>
+      <if test="resourceid != null">resourceid = #{resourceid}</if>
+      <if test="targetmonth != null">
+      <![CDATA[
+        AND targetmonth <= #{targetmonth}
+      ]]>
+      </if>
+    </where>
+    ORDER BY targetmonth DESC
+    LIMIT 1
+  </select>
+</mapper>

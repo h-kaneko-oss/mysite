@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC
+  "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jp.co.nttf.gms.common.internal.data.gmsdb.TMaintenanceDistributionMapper">
+  <!-- テーブル名 -->
+  <sql id="tableName">t_maintenance_distribution</sql>
+  <!-- 全カラム名 -->
+  <sql id="allColumns">
+    distributionid, scheduleid, gmuid, modeno, starttime, status, createtime, updatetime
+  </sql>
+  <!-- メンテナンス配信管理を登録する -->
+  <insert id="insertDistribution" keyProperty="distributionid" parameterType="TMaintenanceDistribution" useGeneratedKeys="true">
+    INSERT INTO <include refid="tableName"/>
+    (scheduleid, gmuid, modeno, starttime, status, createtime, updatetime) VALUES
+    (
+      #{scheduleid},
+      #{gmuid},
+      #{modeno},
+      #{starttime},
+      #{status},
+      #{createtime},
+      #{updatetime}
+    )
+  </insert>
+</mapper>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC
+  "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jp.co.nttf.gms.common.internal.data.gmsdb.TGenerationForecastMapper">
+  <!-- テーブル名 -->
+  <sql id="tableName">t_generation_forecast</sql>
+  <!-- 全カラム名 -->
+  <sql id="allColumns">
+    d_g_location_id, calc_time, forecast_time, generation_forecast_value
+  </sql>
+  <!-- 挿入クエリ -->
+  <insert id="insert" parameterType="TGenerationForecast">
+    INSERT INTO <include refid="tableName"/>
+    (d_g_location_id, calc_time, forecast_time, generation_forecast_value)
+    values (
+      #{d_g_location_id}, #{calc_time}, #{forecast_time}, #{generation_forecast_value}
+    )
+  </insert>
+  <!-- 全件取得クエリ -->
+  <select id="selectAll" resultType="TGenerationForecast">
+    SELECT <include refid="allColumns"/>
+    FROM <include refid="tableName"/>
+  </select>
+  <!-- 特定の配信における登録件数取得クエリ -->
+  <select id="countDataInCalc" resultType="Integer">
+    SELECT COUNT(*)
+    FROM <include refid="tableName"/>
+    WHERE calc_time = #{calcTime}
+  </select>
+  <!-- 指定時間のデータ取得クエリ -->
+  <select id="getDataWithForecastTime" resultType="TGenerationForecast">
+    SELECT <include refid="allColumns"/>
+    FROM <include refid="tableName"/>
+    WHERE
+      d_g_location_id = #{d_g_location_id}
+      <![CDATA[
+        AND forecast_time = #{forecastTime}
+      ]]>
+    ORDER BY calc_time DESC
+    LIMIT 1
+  </select>
+  <!-- 特定の配信におけるデータ取得クエリ -->
+  <select id="getDataWithCalcTime" resultType="TGenerationForecast">
+    SELECT <include refid="allColumns"/>
+    FROM <include refid="tableName"/>
+    WHERE
+      d_g_location_id = #{d_g_location_id}
+      <![CDATA[
+        AND calc_time = #{calcTime}
+      ]]>
+    ORDER BY forecast_time
+  </select>
+</mapper>

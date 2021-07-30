@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC
+  "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jp.co.nttf.gms.common.internal.data.gmsdb.TGmuMapper">
+  <!-- テーブル名 -->
+  <sql id="tableName">t_gmu</sql>
+  <!-- 全カラム名 -->
+  <sql id="allColumns">
+    userid, passwd, interval, recvtime, note, ipaddr, smailfilterflg, smailfilterword, smailfiltertime
+  </sql>
+  <!-- 計測データ受信時刻取得クエリ -->
+  <select id="selectRecvtime" resultType="Date">
+    SELECT recvtime
+    FROM <include refid="tableName"/>
+    WHERE userid = #{gmuId}
+  </select>
+  <!-- 指定したGMU-IDの情報を取得する -->
+  <select id="getTargetGmuId" resultType="TGmu">
+    SELECT <include refid="allColumns"/>
+    FROM <include refid="tableName"/>
+    WHERE userid = #{gmuId}
+  </select>
+</mapper>

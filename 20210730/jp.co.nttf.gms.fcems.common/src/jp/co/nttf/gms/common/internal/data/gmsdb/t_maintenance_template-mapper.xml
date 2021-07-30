@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC
+  "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jp.co.nttf.gms.common.internal.data.gmsdb.TMaintenanceTemplateMapper">
+  <!-- テーブル名 -->
+  <sql id="tableName">t_maintenance_template</sql>
+  <!-- 全カラム名 -->
+  <sql id="allColumns">
+    gmuid, level, devicename, property
+  </sql>
+  <!-- GMU-IDとレベル、デバイスに紐付くメンテナンステンプレート取得 -->
+  <select id="getTemplateByGmuIdLevel" resultType="TMaintenanceTemplate" parameterType="Map">
+    SELECT <include refid="allColumns"/>
+    FROM <include refid="tableName"/>
+    WHERE
+      gmuid = #{gmuid}
+      AND level = #{level}
+      <if test="deviceName.size() > 0">
+        AND devicename IN
+        <foreach item="item" collection="deviceName" open="(" close=")" separator=", ">
+          #{item}
+        </foreach>
+      </if>
+  </select>
+</mapper>

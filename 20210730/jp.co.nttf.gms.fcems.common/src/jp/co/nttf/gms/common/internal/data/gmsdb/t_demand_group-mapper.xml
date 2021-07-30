@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC
+  "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jp.co.nttf.gms.common.internal.data.gmsdb.TDemandGroupMapper">
+  <!-- テーブル名 -->
+  <sql id="tableName">t_demand_group</sql>
+  <!-- 全カラム名 -->
+  <sql id="allColumns">
+    drgroupid, name, resourceid
+  </sql>
+  <!-- レコード取得クエリ -->
+  <select id="select" resultType="TDemandGroup">
+    SELECT <include refid="allColumns"/>
+    FROM <include refid="tableName"/>
+    <where>
+      <if test="drgroupid != null">drgroupid = #{drgroupid}</if>
+      <if test="name != null">AND name = #{name}</if>
+      <if test="resourceid != null">
+        AND
+        <foreach item="item" collection="resourceid" open="" close="" separator=", ">
+          #{item}
+        </foreach>
+         = ANY(resourceid)
+      </if>
+    </where>
+  </select>
+</mapper>

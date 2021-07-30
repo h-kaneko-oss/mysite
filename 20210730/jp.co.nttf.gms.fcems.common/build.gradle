@@ -1,0 +1,50 @@
+/*
+ * build.gradle
+ * Created on 2016/09/08
+ * RCSID: $Id$
+ *
+ * (C) Copyright NTT-F 2016 All rights reserved.
+ *
+ * This software is furnished under a contract and use, duplication, disclosure
+ * and all other uses are restricted to the rights specified in the written
+ * contract and memorandum between the contractor and NTT-F.
+ */
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+// エンコーディング設定
+def defaultEncoding = 'UTF-8'
+tasks.withType(AbstractCompile)*.options*.encoding = defaultEncoding
+tasks.withType(GroovyCompile)*.groovyOptions*.encoding = defaultEncoding
+
+// 依存関係の定義(ファイル依存関係)
+dependencies {
+	// lib フォルダ直下の jar を全て指定
+	compile fileTree(dir: 'lib', include: '*.jar')
+}
+
+// [javaプラグイン] プロジェクトのソースセット
+sourceSets {
+	main {
+		java.srcDirs = ['src']
+	}
+}
+
+// [javaプラグイン] Javaソースのコンパイル時に使用するJavaバージョン互換性
+sourceCompatibility = '1.6'
+// [javaプラグイン] クラス生成のターゲットJavaバージョン
+targetCompatibility = '1.6'
+
+// [javaプラグイン] javadocのエンコーティング設定
+javadoc {
+	options.charSet = defaultEncoding
+	options.encoding = defaultEncoding
+}
+
+// [eclipseプラグイン] プロジェクト設定
+eclipse {
+    project {
+        name = 'jp.co.nttf.gms.fcems.common'
+    }
+}
+

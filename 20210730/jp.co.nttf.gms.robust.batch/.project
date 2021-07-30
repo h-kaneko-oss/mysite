@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>jp.co.nttf.gms.robust.batch</name>
+	<comment>Project jp.co.nttf.gms.robust.batch created by Buildship.</comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.buildship.core.gradleprojectbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.buildship.core.gradleprojectnature</nature>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>common</name>
+			<type>2</type>
+			<location>C:/Eclipse/workspace_46/GMS/jp.co.nttf.gms.fcems.common/src</location>
+		</link>
+		<link>
+			<name>jp.co.nttf.gms.fcems.common</name>
+			<type>2</type>
+			<location>C:/Eclipse/workspace_46/GMS/jp.co.nttf.gms.fcems.common</location>
+		</link>
+	</linkedResources>
+</projectDescription>
