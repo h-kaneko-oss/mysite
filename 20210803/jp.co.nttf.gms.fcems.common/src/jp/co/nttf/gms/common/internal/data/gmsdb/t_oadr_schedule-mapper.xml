@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC
+  "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jp.co.nttf.gms.common.internal.data.gmsdb.TOadrScheduleMapper">
+  <!-- テーブル名 -->
+  <sql id="tableName">t_oadr_schedule</sql>
+  <!-- 全カラム名 -->
+  <sql id="allColumns">
+    scheduleid, modeno, starttime, duration, resourceid, status, drgroupid, eventid, payload, factor, target, achievement, parentid, createtime, updatetime, parameteruptime
+  </sql>
+  <!-- 既存レコード無効クエリ -->
+  <update id="disableAll" parameterType="TOadrSchedule">
+    UPDATE <include refid="tableName"/>
+    SET
+      status = #{status}
+    <![CDATA[
+    WHERE starttime >= #{starttime}
+      AND starttime < #{endtime}
+      AND status = 0
+    ]]>
+    <if test="scheduleid != null">
+      <![CDATA[
+      AND scheduleid <> #{scheduleid}
+      ]]>
+    </if>
+      AND (
+          resourceid = #{resourceid}
+        OR
+          drgroupid IN (SELECT drgroupid FROM t_demand_group WHERE #{resourceid} = ANY(resourceid))
+      )
+  </update>
+  <!-- 挿入クエリ -->
+  <insert id="insert" parameterType="TOadrSchedule" useGeneratedKeys="true" keyProperty="scheduleid">
+    INSERT INTO <include refid="tableName"/>
+    (modeno, starttime, duration
+    <if test="resourceid != null">, resourceid</if>
+    <if test="eventid != null">, eventid</if>
+    <if test="payload != null">, payload</if>
+    <if test="parentid != null">, parentid</if>
+    )
+    values (
+      #{modeno}, #{starttime}, #{duration}
+      <if test="resourceid != null">, #{resourceid}</if>
+      <if test="eventid != null">, #{eventid}</if>
+      <if test="payload != null">, #{payload}</if>
+      <if test="parentid != null">, #{parentid}</if>
+    )
+  </insert>
+  <!-- 更新クエリ -->
+  <update id="update" parameterType="TOadrSchedule">
+    UPDATE <include refid="tableName"/>
+    <set>
+      <if test="modeno != null">modeno = #{modeno},</if>
+      <if test="starttime != null">starttime = #{starttime},</if>
+      <if test="duration != null">duration = #{duration},</if>
+      <if test="resourceid != null">resourceid = #{resourceid},</if>
+      <if test="status != null">status = #{status},</if>
+      <if test="drgroupid != null">drgroupid = #{drgroupid},</if>
+      <if test="eventid != null">eventid = #{eventid},</if>
+      <if test="payload != null">payload = #{payload},</if>
+      <if test="factor != null">factor = #{factor},</if>
+      <if test="target != null">target = #{target},</if>
+      <if test="achievement != null">achievement = #{achievement},</if>
+      <if test="parentid != null">parentid = #{parentid},</if>
+      <if test="updatetime != null">updatetime = #{updatetime}</if>
+      <if test="parameteruptime != null">parameteruptime = #{parameteruptime}</if>
+    </set>
+    <where>
+      <if test="scheduleid != null">scheduleid = #{scheduleid}</if>
+      <if test="resourceid != null">AND resourceid = #{resourceid}</if>
+      <if test="drgroupid != null">AND drgroupid = #{drgroupid}</if>
+      <if test="eventid != null">AND eventid = #{eventid}</if>
+      <if test="parentid != null">parentid = #{parentid}</if>
+    </where>
+  </update>
+  <!-- 取得クエリ -->
+  <select id="select" parameterType="TOadrSchedule" resultType="TOadrSchedule">
+    SELECT <include refid="allColumns"/>
+    FROM <include refid="tableName"/> AS sdl
+    <where>
+      <if test="scheduleid != null">scheduleid = #{scheduleid}</if>
+      <if test="duration != null">
+        <if test="duration != -1">
+          AND duration = #{duration}
+        </if>
+        <if test="duration == -1">
+        <![CDATA[
+          AND duration > 0
+        ]]>
+        </if>
+      </if>
+      <if test="resourceid != null">AND resourceid = #{resourceid}</if>
+      <if test="status != null">AND status = #{status}</if>
+      <if test="drgroupid != null">AND drgroupid = #{drgroupid}</if>
+      <if test="eventid != null">AND eventid = #{eventid}</if>
+      <if test="parentid != null">AND parentid = #{parentid}</if>
+    </where>
+  </select>
+  <!-- 対象日直近モードNo取得クエリ -->
+  <select id="selectNearnessMode" parameterType="TOadrSchedule" resultType="Integer">
+    SELECT sdl.modeno
+    FROM <include refid="tableName"/> AS sdl
+    WHERE sdl.status = 0
+    <![CDATA[
+      AND sdl.starttime < #{starttime}
+      AND resourceid = #{resourceid}
+    ]]>
+    ORDER BY sdl.starttime DESC
+    LIMIT 1
+  </select>
+  <!-- 同時刻開始スケジュール取得クエリ -->
+  <select id="selectSameStartSchedule" parameterType="TOadrSchedule" resultType="TOadrSchedule">
+    SELECT <include refid="allColumns"/>
+    FROM <include refid="tableName"/> AS sdl
+    WHERE sdl.status = 0
+      AND sdl.starttime = #{starttime}
+      AND resourceid = #{resourceid}
+    LIMIT 1
+  </select>
+  <!-- 日付指定スケジュール取得クエリ -->
+  <select id="selectActiveScheduleList" parameterType="TOadrSchedule" resultType="TOadrSchedule">
+    SELECT <include refid="allColumns"/>
+    FROM <include refid="tableName"/> AS sdl
+    WHERE sdl.status = 0
+    <![CDATA[
+      AND sdl.modeno > 0
+      AND sdl.starttime >= #{starttime}
+      AND sdl.starttime < #{starttime}::timestamp + '1 day'
+      AND sdl.resourceid IS NOT NULL
+      AND sdl.parentid IS NULL
+    ]]>
+    ORDER BY sdl.starttime, sdl.scheduleid
+  </select>
+
+  <!-- 制御種別（CEMSDR)の情報を取得する -->
+  <select id="selectControlInfoList" parameterType="TOadrSchedule" resultType="ControlInfo">
+    SELECT distinct t_gmu.userid, t_gmu.note, t_oadr_schedule.starttime, t_oadr_schedule.starttime +(t_oadr_schedule.duration::text||' minute')::INTERVAL as endtime, t_oadr_schedule.modeno as level
+    FROM t_oadr_schedule
+    LEFT JOIN (SELECT drgroupid, unnest(resourceid) as resourceid FROM t_demand_group) t_demand_group
+    ON t_demand_group.drgroupid = t_oadr_schedule.drgroupid
+    INNER JOIN m_gmu2resourceid
+    ON m_gmu2resourceid.resourceid = t_oadr_schedule.resourceid 
+    OR m_gmu2resourceid.resourceid = t_demand_group.resourceid
+    INNER JOIN t_gmu
+    ON t_gmu.userid = m_gmu2resourceid.userid
+    WHERE t_oadr_schedule.status = 0
+    AND date_trunc('minute', t_oadr_schedule.starttime) = #{startTime}
+  </select>
+</mapper>

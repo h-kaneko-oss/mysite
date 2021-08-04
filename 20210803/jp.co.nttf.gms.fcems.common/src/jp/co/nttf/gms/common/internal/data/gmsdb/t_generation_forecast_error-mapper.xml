@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC
+  "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jp.co.nttf.gms.common.internal.data.gmsdb.TGenerationForecastErrorMapper">
+  <!-- テーブル名 -->
+  <sql id="tableName">t_generation_forecast_error</sql>
+  <!-- 全カラム名 -->
+  <sql id="allColumns">
+    d_g_location_id, calc_time, time, integrated_forecast_val, integrated_actual_val, rmse, error_rate
+  </sql>
+  <!-- 挿入クエリ -->
+  <insert id="insert" parameterType="TGenerationForecastError">
+    INSERT INTO <include refid="tableName"/>
+    (d_g_location_id, calc_time, time, integrated_forecast_val, integrated_actual_val, rmse, error_rate)
+    values (
+      #{d_g_location_id}, #{calc_time}, #{time}, #{integrated_forecast_val}, #{integrated_actual_val}, #{rmse}, #{error_rate}
+    )
+  </insert>
+  <!-- 全件取得クエリ -->
+  <select id="selectAll" resultType="TGenerationForecastError">
+    SELECT <include refid="allColumns"/>
+    FROM <include refid="tableName"/>
+  </select>
+</mapper>

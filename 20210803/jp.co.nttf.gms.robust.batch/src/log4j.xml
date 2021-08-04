@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration PUBLIC "-//Apache Software Foundation//DTD Log4J Configuration 1.0//EN"
+    "http://renga.googlecode.com/svn-history/r4/vendor/logging-log4j-1.2.14/docs/api/org/apache/log4j/xml/log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+  <!-- Console Appender -->
+  <appender name="STDOUT" class="org.apache.log4j.ConsoleAppender">
+    <param name="Threshold" value="DEBUG" />
+    <param name="Encoding" value="UTF-8" />
+    <param name="Target" value="System.out" />
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="%d [%5p] %c{1} - %m%n" />
+    </layout>
+  </appender>
+  <!-- Daily Rolling File Appender -->
+  <appender name="DAILY" class="org.apache.log4j.DailyRollingFileAppender">
+    <param name="Threshold" value="DEBUG" />
+    <param name="Encoding" value="UTF-8" />
+    <param name="File" value="C:/Eclipse/log/robust_batch.log" />
+    <param name="Append" value="true" />
+    <param name="DatePattern" value="'.'yyyy-MM-dd" />
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="%d [%5p] %c{1} - %m%n" />
+    </layout>
+  </appender>
+  <!-- Rolling File Appender -->
+  <appender name="FILEOUT" class="org.apache.log4j.RollingFileAppender">
+    <param name="Threshold" value="DEBUG" />
+    <param name="Encoding" value="UTF-8" />
+    <param name="File" value="C:/Eclipse/log/robust_batch.log" />
+    <param name="Append" value="true" />
+    <param name="MaxFileSize" value="10MB" />
+    <param name="MaxBackupIndex" value="5" />
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="%d [%5p] %c{1} - %m%n" />
+    </layout>
+  </appender>
+  <category name="org.apache.ibatis">
+    <priority value="WARN" />
+    <appender-ref ref="FILEOUT" />
+  </category>
+  <root>
+    <priority value="INFO" />
+    <!-- <appender-ref ref="STDOUT" /> -->
+    <!-- <appender-ref ref="DAILY" /> -->
+    <appender-ref ref="FILEOUT" />
+  </root>
+</log4j:configuration>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC
+  "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jp.co.nttf.gms.common.internal.data.gmsdb.TWeatherLocationMapper">
+  <!-- テーブル名 -->
+  <sql id="tableName">t_weather_location</sql>
+  <!-- 全カラム名 -->
+  <sql id="allColumns">
+    location_id, data_type, latitude_index, longitude_index
+  </sql>
+  <!-- 全件取得クエリ -->
+  <select id="selectAll" resultType="TWeatherLocation">
+    SELECT <include refid="allColumns"/>
+    FROM <include refid="tableName"/>
+  </select>
+</mapper>

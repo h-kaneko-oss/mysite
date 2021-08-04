@@ -1,0 +1,113 @@
+/*
+ * build.gradle
+ * Created on 2016/09/08
+ * RCSID: $Id$
+ *
+ * (C) Copyright NTT-F 2016 All rights reserved.
+ *
+ * This software is furnished under a contract and use, duplication, disclosure
+ * and all other uses are restricted to the rights specified in the written
+ * contract and memorandum between the contractor and NTT-F.
+ */
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'distribution'
+
+// エンコーディング設定
+def defaultEncoding = 'UTF-8'
+tasks.withType(AbstractCompile)*.options*.encoding = defaultEncoding
+tasks.withType(GroovyCompile)*.groovyOptions*.encoding = defaultEncoding
+
+// 依存関係の定義(ファイル依存関係)
+dependencies {
+	// commonプロジェクトのコンパイルに依存
+	compile project(':jp.co.nttf.gms.fcems.common')
+	// lib フォルダ直下の jar を全て指定
+	compile fileTree(dir: 'lib', include: '*.jar')
+}
+
+// [javaプラグイン] プロジェクトのソースセット
+sourceSets {
+	main {
+		java.srcDirs = ['src', 'common']
+	}
+}
+
+// [javaプラグイン] Javaソースのコンパイル時に使用するJavaバージョン互換性
+sourceCompatibility = '1.6'
+// [javaプラグイン] クラス生成のターゲットJavaバージョン
+targetCompatibility = '1.6'
+
+// [javaプラグイン] javadocのエンコーティング設定
+javadoc {
+	options.charSet = defaultEncoding
+	options.encoding = defaultEncoding
+}
+
+// 変数定義
+def distName = 'fcems_batch'
+def parentProj = 'jp.co.nttf.gms.fcems.common'
+def versionId = 'batch1.3.0';
+
+// [eclipseプラグイン] プロジェクト設定
+eclipse {
+	project {
+		linkedResource(name: 'common', type: '2', location: 'WORKSPACE_LOC/jp.co.nttf.gms.fcems.common/src')
+	}
+	classpath {
+		file {
+			withXml {
+				def node = it.asNode()
+				node.appendNode('classpathentry', [kind: 'src', path: 'common', exported: true])
+			}
+		}
+	}
+}
+
+// [distributionプラグイン] メイン設定
+distributions {
+	main {
+		// アーカイブ名
+		baseName = "$distName"
+		contents {
+			from fileTree(dir: './', include: '*.sh')
+			from fileTree(dir: 'build/tmp/', include: 'VERSION')
+		}
+		distTar {
+			// binフォルダに含めるファイル
+			into ("$distName/bin") {
+				from fileTree(dir: './src', include: '*.*')
+				from fileTree(dir: "../$parentProj/src/", include: '**/*.xml')
+			}
+			// libフォルダに含めるファイル
+			into ("$distName/lib") {
+				from fileTree(dir: "../$parentProj/build/libs", include: '*.jar')
+				from fileTree(dir: './build/libs', include: '*.jar')
+				from fileTree(dir: './lib', include: '*.jar')
+			}
+			// fileフォルダに含めるファイル
+			into ("$distName/file") {
+				from fileTree(dir: 'file/', include: '*.*')
+			}
+			// 圧縮方式(tar.gzで圧縮)
+			compression = Compression.GZIP
+			// 拡張子
+			extension = 'tar.gz'
+		}
+	}
+}
+
+// バージョンファイルコピータスク
+task copyVersionFile(type: Copy) {
+	from './'
+	include 'VERSION'
+	into 'build/tmp/'
+	expand([
+		version: versionId,
+		date: new Date()
+	])
+}
+
+// distTarタスクに依存タスクを追加
+distTar.dependsOn jar, copyVersionFile
+

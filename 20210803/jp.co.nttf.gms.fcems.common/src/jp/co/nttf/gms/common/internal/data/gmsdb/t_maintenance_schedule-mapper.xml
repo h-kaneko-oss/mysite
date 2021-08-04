@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC
+  "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jp.co.nttf.gms.common.internal.data.gmsdb.TMaintenanceScheduleMapper">
+  <!-- テーブル名 -->
+  <sql id="tableName">t_maintenance_schedule</sql>
+  <!-- 全カラム名 -->
+  <sql id="allColumns">
+    scheduleid, gmuid, calendarid, modeno, starttime, endtime, repeatweeks, repeattime, repeatstart, repeatend, status, updatetime
+  </sql>
+  <!-- メンテナンススケジュール取得クエリ -->
+  <select id="selectMaintenance" parameterType="TMaintenanceSchedule" resultType="TMaintenanceSchedule">
+    SELECT <include refid="allColumns"/>
+    FROM <include refid="tableName"/>
+    <where>
+      status >= 0
+      <if test="scheduleid != null">AND scheduleid = #{scheduleid}</if>
+      <if test="gmuid != null">
+        <if test="modeno == null">
+          AND gmuid = #{gmuid}
+        </if>
+        <if test="modeno != null">
+          AND (
+            gmuid = #{gmuid}
+            OR (
+              calendarid IN (
+                SELECT calendarid
+                FROM t_measurepoint tmp, m_gmu2measurepoint mgm
+                WHERE tmp.measurepointid = mgm.measurepointid
+                AND mgm.userid = #{gmuid}
+                AND tmp.calendarid IS NOT NULL)
+            )
+          )
+        </if>
+      </if>
+      <if test="calendarid != null">AND calendarid = #{calendarid}</if>
+      <if test="modeno != null">AND modeno = #{modeno}</if>
+      <if test="starttime != null">
+      <![CDATA[
+        AND (
+          (
+            (
+              (
+                date_trunc('month', #{starttime}::timestamp) = date_trunc('month', starttime)
+                OR date_trunc('month', #{starttime}::timestamp) = date_trunc('month', endtime)
+              ) OR (
+                date_trunc('month', #{starttime}::timestamp) > date_trunc('month', starttime)
+                AND date_trunc('month', #{starttime}::timestamp) < date_trunc('month', endtime)
+              )
+            ) AND repeatweeks IS NULL
+          ) OR (
+            (
+              (
+                date_trunc('month', #{starttime}::timestamp) = date_trunc('month', repeatstart)
+                OR date_trunc('month', #{starttime}::timestamp) = date_trunc('month', repeatend)
+              ) OR (
+                date_trunc('month', #{starttime}::timestamp) > date_trunc('month', repeatstart)
+                AND date_trunc('month', #{starttime}::timestamp) < date_trunc('month', repeatend)
+              )
+            ) AND repeatweeks IS NOT NULL
+          )
+        )
+      ]]>
+      </if>
+    </where>
+  </select>
+  <!-- メンテナンススケジュールを登録する -->
+  <insert id="insertMaintenance" keyProperty="scheduleid" parameterType="TMaintenanceSchedule" useGeneratedKeys="true">
+    INSERT INTO <include refid="tableName"/>
+    (gmuid, modeno, starttime, endtime, status, updatetime) VALUES
+    (
+     #{gmuid},
+     #{modeno},
+     #{starttime},
+     #{endtime},
+     #{status},
+     #{updatetime}
+    )
+  </insert>
+  <!-- 指定した期間の一括登録スケジュールを無効化するクエリ -->
+  <update id="disableByBulkSchedule" parameterType="map">
+    UPDATE <include refid="tableName"/>
+    SET status = #{param.status}
+    <![CDATA[
+    WHERE starttime >= #{param.starttime}
+    AND endtime <= #{param.endtime}
+    AND modeno = #{param.modeno}
+    AND gmuid IN (SELECT userid FROM m_gmu2resourceid WHERE resourceid = #{resourceid})
+    ]]>
+  </update>
+
+  <!-- 「繰り返し開始日」が指定されないデータを取得する -->
+  <select id="selectRepeatnessControlInfoList" parameterType="map" resultType="ControlInfo">
+    SELECT t_gmu.userid, t_gmu.note, t_maintenance_schedule.starttime, t_maintenance_schedule.endtime, t_maintenance_schedule.level
+    FROM t_maintenance_schedule
+    INNER JOIN t_gmu
+    ON t_gmu.userid = t_maintenance_schedule.gmuid
+    WHERE t_maintenance_schedule.modeno = #{modeNo}
+    AND t_maintenance_schedule.repeatstart IS NULL
+    <![CDATA[
+      AND t_maintenance_schedule.status <> -1
+      AND date_trunc('minute', t_maintenance_schedule.starttime) = #{startTime}
+    ]]>
+  </select>
+  <!-- 「繰り返し開始日」が指定されるデータを取得する -->
+  <select id="selectRepeatedControlInfoList" parameterType="map" resultType="ControlInfo">
+    SELECT t_gmu.userid, t_gmu.note, #{startTime}::date + t_maintenance_schedule.repeattime as starttime, t_maintenance_schedule.starttime as endtime, t_maintenance_schedule.level
+    FROM t_maintenance_schedule
+    INNER JOIN t_gmu
+    ON t_gmu.userid = t_maintenance_schedule.gmuid
+    WHERE t_maintenance_schedule.modeno = #{modeNo}
+    AND t_maintenance_schedule.repeatstart IS NOT NULL
+    <bind name="pattern" value="'%' + week + '%'" />
+    AND t_maintenance_schedule.repeatweeks like #{week}
+    <![CDATA[
+      AND t_maintenance_schedule.status <> -1
+      AND date_trunc('day', #{startTime}::timestamp) BETWEEN t_maintenance_schedule.repeatstart AND t_maintenance_schedule.repeatend
+      AND t_maintenance_schedule.repeattime = date_trunc('minute', #{startTime}::time)
+    ]]>
+  </select>
+</mapper>
